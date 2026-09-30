@@ -1,0 +1,10 @@
+[theme]
+base = "dark"
+primaryColor = "#3987e5"
+backgroundColor = "#0b1120"
+secondaryBackgroundColor = "#141d30"
+textColor = "#e6e9ef"
+font = "Plus Jakarta Sans:https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+
+[server]
+headless = true
