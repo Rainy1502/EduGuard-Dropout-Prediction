@@ -26,9 +26,6 @@
 
 | Detail | Keterangan |
 |---|---|
-| **Nama** | [Nama Lengkap] |
-| **Email** | [Email] |
-| **ID Dicoding** | [username_dicoding] |
 | **Institusi (fiktif)** | Jaya Jaya Institut |
 | **Dataset** | Students' Performance: 4.424 mahasiswa, 36 fitur, target `Status` (Dropout / Enrolled / Graduate) |
 | **Target model** | Dropout vs Non-Dropout (Graduate + Enrolled) |
@@ -246,23 +243,6 @@ streamlit run app.py
 | 5 | **Dukung mahasiswa dewasa & kelas malam** | Jadwal fleksibel, opsi kelas daring/hybrid, dan konseling manajemen waktu bagi mahasiswa ≥ 25 tahun, jalur *Over 23 years old*, dan kelas malam. |
 | 6 | **Mentoring prodi berisiko tinggi** | Program mentoring khusus dan evaluasi kurikulum tahun pertama untuk Equinculture, Informatics Engineering, dan Management kelas malam. |
 | 7 | **Monitoring & evaluasi berkala** | Tinjau dashboard setiap semester untuk melihat dampak intervensi, dan latih ulang model setiap tahun dengan data terbaru. |
-
----
-
-## 📋 Checklist Submission
-
-**Kriteria wajib**
-- [x] Menggunakan template proyek (`notebook.ipynb`, `README.md`)
-- [x] Proses data science lengkap: business understanding → data understanding → preparation → modeling → evaluation → deployment
-- [x] Business dashboard Metabase + `metabase.db.mv.db` + kredensial akses
-- [x] Prototype machine learning dengan Streamlit, di-*deploy* ke Streamlit Community Cloud
-- [x] Kesimpulan dan rekomendasi action items
-
-**Saran**
-- [x] Dokumentasi setiap tahapan dengan *text cell* di notebook, termasuk insight dari setiap analisis
-- [x] Visualisasi data yang efektif: palet warna konsisten dan aman untuk buta warna, sumbu dimulai dari nol, label nilai langsung pada grafik
-- [x] Prototype dengan tampilan UI yang rapi dan mudah digunakan
-- [ ] Video penjelasan (maksimal 5 menit)
 
 ---
 
