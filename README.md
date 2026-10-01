@@ -1,9 +1,9 @@
 <div align="center">
   <img src="assets/favicon.svg" alt="EduGuard Logo" width="90"/>
 
-  # EduGuard: Deteksi Dini Mahasiswa Berisiko Dropout
+  # EduGuard: Early Detection of Students at Risk of Dropping Out
 
-  **Proyek Akhir Belajar Penerapan Data Science · Jaya Jaya Institut**
+  **Final Project, Belajar Penerapan Data Science (Dicoding) · Jaya Jaya Institut**
 
   [![Python](https://img.shields.io/badge/Python-3.12-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
   [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9-F7931E.svg?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
@@ -13,60 +13,60 @@
   [![Metabase](https://img.shields.io/badge/Metabase-0.63-509EE3.svg?logo=metabase&logoColor=white)](https://www.metabase.com/)
   [![Docker](https://img.shields.io/badge/Docker-required_for_Metabase-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 
-  [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://[nama-app].streamlit.app)
+  [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://eduguard-j.streamlit.app/)
 </div>
 
-> Sistem peringatan dini untuk menemukan mahasiswa yang berisiko **dropout** sebelum terlambat.
+> An early warning system that finds students at risk of **dropping out** before it is too late.
 >
-> Proyek ini mencakup analisis data 4.424 mahasiswa Jaya Jaya Institut, model machine learning yang memprediksi risiko dropout (recall 81%, ROC-AUC 0,93), prototype aplikasi Streamlit **EduGuard**, serta business dashboard **Metabase** untuk memonitor faktor-faktor penyebab dropout.
+> The project covers an analysis of 4,424 Jaya Jaya Institut students, a machine learning model that predicts dropout risk (recall 81%, ROC-AUC 0.93), the **EduGuard** Streamlit prototype, and a **Metabase** business dashboard for monitoring the factors behind dropout.
 
 ---
 
-## 📌 Tentang Proyek
+## 📌 About the Project
 
-| Detail | Keterangan |
+| Detail | Description |
 |---|---|
-| **Institusi (fiktif)** | Jaya Jaya Institut |
-| **Dataset** | Students' Performance: 4.424 mahasiswa, 36 fitur, target `Status` (Dropout / Enrolled / Graduate) |
-| **Target model** | Dropout vs Non-Dropout (Graduate + Enrolled) |
-| **Model** | Logistic Regression, 20 fitur + 2 fitur turunan, threshold 0,51 |
-| **Performa (data uji)** | Recall 81,3% · Precision 80,5% · F1 0,809 · Akurasi 87,7% · ROC-AUC 0,929 |
-| **Prototype** | Streamlit (EduGuard), di-*deploy* ke Streamlit Community Cloud |
-| **Dashboard** | Metabase (SQLite sebagai sumber data) |
+| **Institution (fictional)** | Jaya Jaya Institut |
+| **Dataset** | Students' Performance: 4,424 students, 36 features, target `Status` (Dropout / Enrolled / Graduate) |
+| **Model target** | Dropout vs Non-Dropout (Graduate + Enrolled) |
+| **Model** | Logistic Regression, 20 features + 2 engineered features, threshold 0.51 |
+| **Performance (test set)** | Recall 81.3% · Precision 80.5% · F1 0.809 · Accuracy 87.7% · ROC-AUC 0.929 |
+| **Prototype** | Streamlit (EduGuard), deployed to Streamlit Community Cloud |
+| **Dashboard** | Metabase (SQLite as the data source) |
 
 ---
 
 ## 💼 Business Understanding
 
-Jaya Jaya Institut adalah institusi pendidikan tinggi yang berdiri sejak tahun 2000 dan telah menghasilkan banyak lulusan dengan reputasi baik. Namun, jumlah mahasiswa yang tidak menyelesaikan pendidikannya (**dropout**) masih tinggi. Kondisi ini merugikan institusi dari sisi reputasi, akreditasi, dan pendapatan, sekaligus merugikan mahasiswa itu sendiri.
+Jaya Jaya Institut is a higher education institution founded in 2000 that has produced many well-regarded graduates. However, the number of students who do not finish their studies (**dropout**) is still high. This hurts the institution's reputation, accreditation, and revenue, and it hurts the students themselves.
 
-Jaya Jaya Institut ingin **mendeteksi sedini mungkin mahasiswa yang berpotensi dropout** agar dapat diberi bimbingan khusus, serta membutuhkan dashboard untuk memahami data dan memonitor performa mahasiswa.
+Jaya Jaya Institut wants to **detect students who are likely to drop out as early as possible** so they can receive targeted guidance, and it needs a dashboard to understand the data and monitor student performance.
 
-### Permasalahan Bisnis
+### Business Problems
 
-1. Seberapa besar tingkat dropout di Jaya Jaya Institut?
-2. Faktor apa saja (akademik, finansial, demografis, program studi, dan jalur masuk) yang paling berkaitan dengan dropout?
-3. Bagaimana mendeteksi mahasiswa yang berisiko dropout sejak dini secara otomatis?
-4. Bagaimana institusi dapat memonitor performa mahasiswa secara berkelanjutan?
+1. How high is the dropout rate at Jaya Jaya Institut?
+2. Which factors (academic, financial, demographic, study program, and admission path) are most associated with dropout?
+3. How can students at risk of dropping out be detected early and automatically?
+4. How can the institution monitor student performance on an ongoing basis?
 
-### Cakupan Proyek
+### Project Scope
 
-| Tahap | Output |
+| Stage | Output |
 |---|---|
-| **Data understanding & EDA** | Faktor utama penyebab dropout (`notebook.ipynb`) |
-| **Data preparation** | Seleksi 20 fitur, fitur turunan rasio kelulusan MK, pipeline preprocessing |
-| **Modeling & evaluation** | Perbandingan 4 algoritma, tuning, pemilihan threshold, evaluasi pada data uji |
-| **Deployment** | Prototype Streamlit **EduGuard** di Streamlit Community Cloud |
-| **Business dashboard** | Dashboard Metabase 4 tab dengan filter program studi & gender |
-| **Rekomendasi** | Kesimpulan dan action items bagi institusi |
+| **Data understanding & EDA** | Main drivers of dropout (`notebook.ipynb`) |
+| **Data preparation** | Selection of 20 features, course pass-rate features, preprocessing pipeline |
+| **Modeling & evaluation** | Comparison of 4 algorithms, tuning, threshold selection, evaluation on the test set |
+| **Deployment** | **EduGuard** Streamlit prototype on Streamlit Community Cloud |
+| **Business dashboard** | 4-tab Metabase dashboard with study program & gender filters |
+| **Recommendations** | Conclusions and action items for the institution |
 
-### Persiapan
+### Setup
 
-**Sumber data:** [Students' Performance (Dicoding Academy)](https://github.com/dicodingacademy/dicoding_dataset/tree/main/students_performance), berasal dari dataset UCI *Predict Students' Dropout and Academic Success* (Realinho dkk., 2021). Salinan data ada di `data/data.csv` (pemisah `;`).
+**Data source:** [Students' Performance (Dicoding Academy)](https://github.com/dicodingacademy/dicoding_dataset/tree/main/students_performance), derived from the UCI dataset *Predict Students' Dropout and Academic Success* (Realinho et al., 2021). A copy is stored in `data/data.csv` (`;`-separated).
 
-**Setup environment** (Python 3.12):
+**Environment setup** (Python 3.12):
 
-**1. Buat dan aktifkan virtual environment**
+**1. Create and activate a virtual environment**
 ```bash
 python -m venv .venv
 
@@ -81,62 +81,62 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**3. (Opsional) Jalankan ulang notebook**
+**3. (Optional) Re-run the notebook**
 ```bash
 jupyter notebook notebook.ipynb
 ```
-> 💡 Notebook menghasilkan ulang model (`model/`), data dashboard (`data/students_clean.csv`, `data/students.db`), dan contoh input batch (`data/contoh_input_batch.csv`). Semua file tersebut sudah tersedia, jadi langkah ini opsional.
+> 💡 The notebook regenerates the model (`model/`), the dashboard data (`data/students_clean.csv`, `data/students.db`), and the sample batch input (`data/sample_batch_input.csv`). All of these files are already included, so this step is optional.
 
 ---
 
-## 🗂️ Struktur Proyek
+## 🗂️ Project Structure
 
 ```text
 submission/
 │
-├── 📄 README.md                        # Dokumentasi proyek (file ini)
-├── 📓 notebook.ipynb                   # Proses data science lengkap: EDA → modeling → evaluasi
-├── 🐍 app.py                           # Prototype Streamlit (EduGuard)
-├── 🐍 utils.py                         # Mapping label & feature engineering (dipakai notebook dan app)
+├── 📄 README.md                        # Project documentation (this file)
+├── 📓 notebook.ipynb                   # Full data science process: EDA → modeling → evaluation
+├── 🐍 app.py                           # Streamlit prototype (EduGuard)
+├── 🐍 utils.py                         # Label mappings & feature engineering (shared by notebook and app)
 ├── 📄 requirements.txt                 # Dependencies
-├── 🗄️ metabase.db.mv.db                # Database Metabase berisi business dashboard
-├── 🖼️ [username_dicoding]-dashboard.png # Screenshot business dashboard
+├── 🗄️ metabase.db.mv.db                # Metabase database containing the business dashboard
+├── 🖼️ rainy1501-dashboard*.png         # Business dashboard screenshots (4 tabs)
 │
 ├── 📁 data/
-│   ├── data.csv                        # Dataset asli
-│   ├── students_clean.csv              # Data berlabel (hasil notebook)
-│   ├── students.db                     # Database SQLite, sumber data Metabase
-│   └── contoh_input_batch.csv          # Template / contoh input prediksi batch
+│   ├── data.csv                        # Original dataset
+│   ├── students_clean.csv              # Labelled data (notebook output)
+│   ├── students.db                     # SQLite database, the Metabase data source
+│   └── sample_batch_input.csv          # Template / sample input for batch prediction
 │
 ├── 📁 model/
 │   ├── dropout_model.joblib            # Pipeline: feature engineering + preprocessing + model
-│   └── model_metadata.json             # Threshold, metrik, dan feature importance
+│   └── model_metadata.json             # Threshold, metrics, and feature importance
 │
-├── 📁 assets/                          # CSS & logo aplikasi
-└── 📁 .streamlit/config.toml           # Tema aplikasi
+├── 📁 assets/                          # App CSS & logo
+└── 📁 .streamlit/config.toml           # App theme
 ```
 
 ---
 
-## 🔬 Alur Kerja Sistem
+## 🔬 System Workflow
 
 ```
                      [ data/data.csv ]
-               4.424 mahasiswa · 36 fitur
+               4,424 students · 36 features
                            │
                            ▼
                   [ notebook.ipynb ]
-         EDA → preparation → modeling → evaluasi
+         EDA → preparation → modeling → evaluation
                            │
           ┌────────────────┴─────────────────┐
           ▼                                  ▼
 [ model/dropout_model.joblib ]     [ data/students.db ]
-  Logistic Regression pipeline      data berlabel (SQLite)
+  Logistic Regression pipeline      labelled data (SQLite)
           │                                  │
           ▼                                  ▼
   [ EduGuard · Streamlit ]           [ Metabase Dashboard ]
-  Dashboard · Prediksi individu      4 tab · filter prodi & gender
-  Prediksi batch · Tentang model     ← Port 3000
+  Dashboard · Single prediction      4 tabs · program & gender filters
+  Batch prediction · About model     ← Port 3000
   ← Port 8501 / Streamlit Cloud
 ```
 
@@ -144,30 +144,39 @@ submission/
 
 ## 📊 Business Dashboard
 
-Dashboard dibuat dengan **Metabase** dan terdiri dari 4 tab. Filter **Program Studi** dan **Gender** berlaku untuk semua grafik.
+The dashboard is built with **Metabase** and has 4 tabs (labels in Indonesian). The **Program Studi** (study program) and **Gender** filters apply to every chart.
 
-| Tab | Isi |
+| Tab | Contents |
 |---|---|
-| **Ringkasan** | KPI (total mahasiswa, jumlah & persentase dropout, enrolled, graduate, menunggak UKT), distribusi status, dropout rate menurut kondisi mahasiswa, temuan utama |
-| **Akademik** | Dropout rate berdasarkan jumlah MK lulus di semester 2, rata-rata MK lulus dan nilai per status |
-| **Finansial & Demografi** | Dropout rate berdasarkan kondisi finansial, komposisi status per pembayaran UKT, dropout rate per usia, gender, waktu kuliah, dan status pernikahan |
-| **Prodi & Jalur Masuk** | Dropout rate per program studi dan jalur masuk, tabel ringkasan per program studi |
+| **Ringkasan** (Summary) | KPIs (total students, dropout count & rate, enrolled, graduate, overdue tuition), status distribution, dropout rate by student condition, key findings |
+| **Akademik** (Academic) | Dropout rate by number of courses passed in semester 2, average courses passed and grades per status |
+| **Finansial & Demografi** (Financial & Demographic) | Dropout rate by financial condition, status mix by tuition payment, dropout rate by age, gender, class time, and marital status |
+| **Prodi & Jalur Masuk** (Program & Admission) | Dropout rate per study program and admission path, summary table per study program |
 
-Pada grafik dropout rate, batang **oranye** menandai kelompok dengan dropout rate **di atas rata-rata** segmen yang sedang difilter, sedangkan **abu-abu** di bawah rata-rata.
+On the dropout-rate charts, **orange** bars mark groups whose dropout rate is **above the average** of the filtered segment, while **grey** bars are below average.
 
-![Business Dashboard]([username_dicoding]-dashboard.png)
+![Dashboard - Summary](rainy1501-dashboard.png)
 
-**Akses Metabase**
+<details>
+<summary><b>Show the other tabs</b></summary>
+
+![Dashboard - Academic](rainy1501-dashboard-academic.png)
+![Dashboard - Financial & Demographic](rainy1501-dashboard-financial-demographic.png)
+![Dashboard - Program & Admission](rainy1501-dashboard-program-admission.png)
+
+</details>
+
+**Metabase access**
 
 | | |
 |---|---|
 | **Email** | `root@mail.com` |
 | **Password** | `root123` |
 
-**Cara menjalankan dashboard** (membutuhkan Docker)
+**Running the dashboard** (requires Docker)
 
 ```bash
-# Jalankan dari folder proyek ini
+# Run from this project folder
 mkdir metabase-data
 cp metabase.db.mv.db metabase-data/     # Windows PowerShell: Copy-Item metabase.db.mv.db metabase-data\
 
@@ -176,78 +185,95 @@ docker run -d -p 3000:3000 \
   -v "$(pwd)/data:/data" \
   --name metabase metabase/metabase:v0.63.18.5
 ```
-> 💡 Buka **http://localhost:3000**, login dengan akun di atas, lalu buka dashboard **"Jaya Jaya Institut - Student Performance & Dropout Monitoring"** di menu *Our analytics*. Di Windows PowerShell, ganti `$(pwd)` dengan `${PWD}` dan tulis perintah `docker run` dalam satu baris.
+> 💡 Open **http://localhost:3000**, log in with the account above, then open the **"Jaya Jaya Institut - Student Performance & Dropout Monitoring"** dashboard under *Our analytics*. On Windows PowerShell, replace `$(pwd)` with `${PWD}` and write the `docker run` command on a single line.
 
 ---
 
-## 🤖 Menjalankan Sistem Machine Learning
+## 🤖 Running the Machine Learning System
 
-Prototype sistem machine learning bernama **EduGuard**, dibuat dengan Streamlit.
+The machine learning prototype is called **EduGuard** and is built with Streamlit.
 
-**🔗 Link prototype:** [https://[nama-app].streamlit.app](https://[nama-app].streamlit.app)
+**🔗 Live prototype:** [https://eduguard-j.streamlit.app](https://eduguard-j.streamlit.app/)
 
-**Menjalankan secara lokal** (setelah langkah *Persiapan*):
+**Run locally** (after the *Setup* steps):
 ```bash
 streamlit run app.py
 ```
-> 💡 Aplikasi terbuka di **http://localhost:8501**. Gunakan tombol *Isi contoh risiko rendah/tinggi* di tab Prediksi Individu untuk mencoba dengan cepat.
+> 💡 The app opens at **http://localhost:8501**. Use the *Fill low-risk / high-risk example* buttons in the Single Prediction tab for a quick try.
 
-### Fitur Utama
+### Main Features
 
-| Fitur | Detail |
+| Feature | Details |
 |---|---|
-| **Dashboard** | Monitoring dropout per segmen dengan filter program studi, gender, dan waktu kuliah |
-| **Prediksi Individu** | Probabilitas dan tingkat risiko dropout (**Rendah** < 25%, **Sedang** 25–51%, **Tinggi** ≥ 51%), faktor yang paling memengaruhi prediksi, dan rekomendasi untuk dosen wali |
-| **Prediksi Batch** | Unggah CSV banyak mahasiswa (template di `data/contoh_input_batch.csv`), filter per tingkat risiko, unduh hasil |
-| **Tentang Model** | Performa model, alur prediksi, dan pengaruh setiap fitur |
+| **Dashboard** | Dropout monitoring per segment, filterable by study program, gender, and class time |
+| **Single Prediction** | Dropout probability and risk level (**Low** < 25%, **Medium** 25–51%, **High** ≥ 51%), the factors that drive the prediction, and recommendations for academic advisors |
+| **Batch Prediction** | Upload a CSV of many students (template in `data/sample_batch_input.csv`), filter by risk level, download the results |
+| **About the Model** | Model performance, prediction flow, and the influence of each feature |
 
 ### Model
 
-| Aspek | Keterangan |
+| Aspect | Description |
 |---|---|
-| **Algoritma** | Logistic Regression (C = 10), terpilih dari perbandingan dengan Decision Tree, Random Forest, dan Gradient Boosting |
-| **Target** | Dropout (1) vs Non-Dropout (0). *Enrolled* (terlambat lulus) digabung ke Non-Dropout karena belum dropout, sehingga seluruh 4.424 data tetap digunakan |
-| **Fitur** | 20 fitur (akademik semester 1–2, finansial, profil, pendaftaran) + 2 fitur turunan (rasio kelulusan MK per semester) |
-| **Threshold** | 0,51, dipilih agar recall minimal 80% |
-| **Performa (data uji)** | Recall 81,3% · Precision 80,5% · F1 0,809 · Akurasi 87,7% · ROC-AUC 0,929 |
-| **Validasi tingkat risiko** | Dropout rate aktual pada data uji: Rendah 4,9% · Sedang 21,4% · Tinggi 80,5% |
+| **Algorithm** | Logistic Regression (C = 10), chosen over Decision Tree, Random Forest, and Gradient Boosting |
+| **Target** | Dropout (1) vs Non-Dropout (0). *Enrolled* (graduating late) is merged into Non-Dropout because these students have not dropped out, so all 4,424 rows are kept |
+| **Features** | 20 features (semester 1–2 academics, finances, profile, admission) + 2 engineered features (course pass rate per semester) |
+| **Threshold** | 0.51, chosen so that recall is at least 80% |
+| **Performance (test set)** | Recall 81.3% · Precision 80.5% · F1 0.809 · Accuracy 87.7% · ROC-AUC 0.929 |
+| **Risk-level validation** | Actual dropout rate on the test set: Low 4.9% · Medium 21.4% · High 80.5% |
 
 ---
 
 ## ✅ Conclusion
 
-1. **Tingkat dropout tinggi.** Sebanyak **32,1% mahasiswa (1.421 dari 4.424) dropout**, sekitar 1 dari 3 mahasiswa. Sebanyak 17,9% masih terdaftar setelah masa studi normal (terlambat lulus) dan 49,9% lulus.
+1. **The dropout rate is high.** **32.1% of students (1,421 of 4,424) dropped out**, roughly 1 in 3. Another 17.9% were still enrolled after the normal study period (graduating late) and 49.9% graduated.
 
-2. **Faktor yang paling berkaitan dengan dropout:**
+2. **Factors most associated with dropout:**
 
-   | Faktor | Temuan |
+   | Factor | Finding |
    |---|---|
-   | **Akademik** (paling kuat) | **84%** mahasiswa yang tidak lulus satu pun MK di semester 2 akhirnya dropout, vs 11% yang lulus 5–6 MK. Rata-rata mahasiswa dropout hanya lulus 2,6 MK (smt 1) dan 1,9 MK (smt 2), sedangkan mahasiswa yang lulus sekitar 6 MK. |
-   | **Finansial** | Menunggak UKT: **87%** dropout (vs 25% yang lunas). Memiliki utang: **62%** (vs 28%). Penerima beasiswa hanya **12%** (vs 39%). |
-   | **Demografis** | Usia masuk ≥ 25 tahun: **> 50%** (vs 21% usia ≤ 20). Laki-laki 45% (vs 25% perempuan). Kelas malam 43% (vs 31% kelas siang). |
-   | **Prodi & jalur masuk** | Tertinggi: Equinculture (55%), Informatics Engineering (54%), Management kelas malam (51%). Terendah: Nursing (15%). Jalur *Over 23 years old* (55%) dan *Holders of other higher courses* (61%) paling berisiko. |
-   | **Tidak berpengaruh berarti** | Pendidikan orang tua dan kondisi makroekonomi (pengangguran, inflasi, GDP) |
+   | **Academic** (strongest) | **84%** of students who passed no courses in semester 2 eventually dropped out, vs 11% of those who passed 5–6 courses. Dropouts passed only 2.6 courses (sem 1) and 1.9 courses (sem 2) on average, while graduates passed about 6. |
+   | **Financial** | Overdue tuition: **87%** dropped out (vs 25% of those paid up). Debtors: **62%** (vs 28%). Scholarship holders: only **12%** (vs 39%). |
+   | **Demographic** | Enrolled at age ≥ 25: **> 50%** (vs 21% at age ≤ 20). Men 45% (vs 25% of women). Evening classes 43% (vs 31% daytime). |
+   | **Program & admission path** | Highest: Equinculture (55%), Informatics Engineering (54%), Management (evening) (51%). Lowest: Nursing (15%). The *Over 23 years old* (55%) and *Holders of other higher courses* (61%) paths carry the most risk. |
+   | **No meaningful effect** | Parents' education and macroeconomic conditions (unemployment, inflation, GDP) |
 
-3. **Deteksi dini dapat dilakukan otomatis.** Model mendeteksi **81% mahasiswa yang akan dropout** dengan precision 80%. Tingkat risikonya terbukti bermakna: dropout rate aktual 4,9% (Rendah), 21,4% (Sedang), dan 80,5% (Tinggi).
+3. **Early detection can be automated.** The model catches **81% of students who will drop out** with 80% precision. Its risk levels are meaningful: the actual dropout rate is 4.9% (Low), 21.4% (Medium), and 80.5% (High).
 
-4. **Monitoring berkelanjutan** dapat dilakukan lewat dashboard Metabase dan tab Dashboard di EduGuard, per program studi, gender, dan waktu kuliah.
+4. **Ongoing monitoring** is possible through the Metabase dashboard and the Dashboard tab in EduGuard, by study program, gender, and class time.
 
-### 🎯 Rekomendasi Action Items
+### 🎯 Recommended Action Items
 
-| # | Aksi | Detail |
+| # | Action | Details |
 |---|---|---|
-| 1 | **Peringatan dini tiap akhir semester** | Jalankan prediksi batch EduGuard untuk seluruh mahasiswa aktif di akhir semester 1 dan 2. Mahasiswa risiko *Tinggi* bertemu dosen wali dalam 2 minggu; risiko *Sedang* dipantau bulanan. |
-| 2 | **Intervensi akademik sejak semester 1** | Bimbingan intensif, kelas remedial, dan tutor sebaya bagi mahasiswa dengan rasio kelulusan MK < 50% atau tanpa MK lulus. |
-| 3 | **Tangani masalah finansial lebih awal** | Integrasikan data tunggakan UKT ke sistem akademik; tawarkan cicilan/keringanan UKT dan konseling finansial bagi yang menunggak atau berutang. |
-| 4 | **Perluas beasiswa** | Prioritaskan mahasiswa berisiko tinggi dengan kendala finansial, karena dropout rate penerima beasiswa jauh lebih rendah. |
-| 5 | **Dukung mahasiswa dewasa & kelas malam** | Jadwal fleksibel, opsi kelas daring/hybrid, dan konseling manajemen waktu bagi mahasiswa ≥ 25 tahun, jalur *Over 23 years old*, dan kelas malam. |
-| 6 | **Mentoring prodi berisiko tinggi** | Program mentoring khusus dan evaluasi kurikulum tahun pertama untuk Equinculture, Informatics Engineering, dan Management kelas malam. |
-| 7 | **Monitoring & evaluasi berkala** | Tinjau dashboard setiap semester untuk melihat dampak intervensi, dan latih ulang model setiap tahun dengan data terbaru. |
+| 1 | **Early warning at the end of every semester** | Run EduGuard batch prediction for all active students at the end of semesters 1 and 2. *High*-risk students meet their academic advisor within 2 weeks; *Medium*-risk students are checked monthly. |
+| 2 | **Academic intervention from semester 1** | Intensive mentoring, remedial classes, and peer tutoring for students with a course pass rate below 50% or no courses passed. |
+| 3 | **Address financial problems early** | Link tuition arrears data to the academic system; offer instalment plans or tuition relief and financial counselling to students who are behind on tuition or in debt. |
+| 4 | **Expand scholarships** | Prioritise high-risk students with financial constraints, since scholarship holders drop out far less often. |
+| 5 | **Support mature & evening students** | Flexible schedules, online/hybrid class options, and time-management counselling for students aged ≥ 25, the *Over 23 years old* path, and evening classes. |
+| 6 | **Mentoring for high-risk programs** | Dedicated mentoring and a first-year curriculum review for Equinculture, Informatics Engineering, and Management (evening). |
+| 7 | **Regular monitoring & evaluation** | Review the dashboard every semester to measure the impact of interventions, and retrain the model yearly with the latest data. |
 
 ---
 
-## 📄 Sumber Data
+## 📋 Submission Checklist
+
+**Required criteria**
+- [x] Uses the project template (`notebook.ipynb`, `README.md`)
+- [x] Complete data science process: business understanding → data understanding → preparation → modeling → evaluation → deployment
+- [x] Metabase business dashboard + `metabase.db.mv.db` + access credentials
+- [x] Machine learning prototype built with Streamlit and deployed to Streamlit Community Cloud
+- [x] Conclusions and recommended action items
+
+**Suggestions**
+- [x] Every stage documented with *text cells* in the notebook, including insights from each analysis
+- [x] Effective data visualisation: consistent, colour-blind-safe palette, axes starting at zero, values labelled directly on charts
+- [x] Prototype with a clean, easy-to-use UI
+- [ ] Explanation video (max 5 minutes)
+
+---
+
+## 📄 Data Source
 
 Realinho, V., Vieira Martins, M., Machado, J., & Baptista, L. (2021). *Predict Students' Dropout and Academic Success*. UCI Machine Learning Repository. https://doi.org/10.24432/C5MC89
 
-*Jaya Jaya Institut adalah nama fiktif yang digunakan untuk keperluan proyek pembelajaran Dicoding.*
+*Jaya Jaya Institut is a fictional name used for this Dicoding learning project.*

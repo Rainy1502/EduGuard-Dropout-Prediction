@@ -6,8 +6,8 @@
 :root {
     --eg-surface: rgba(255, 255, 255, 0.025);
     --eg-border: rgba(255, 255, 255, 0.08);
-    --eg-muted: #aeb8cc;  /* label & teks pendukung, kontras ~9:1 terhadap latar */
-    --eg-faint: #9aa5bb;  /* keterangan kecil (mis. "1.421 mahasiswa"), kontras ~7:1 */
+    --eg-muted: #aeb8cc;  /* labels & supporting text, ~9:1 contrast against the background */
+    --eg-faint: #9aa5bb;  /* small captions (e.g. "1,421 students"), ~7:1 contrast */
     --eg-blue: #3987e5;
 }
 
@@ -121,7 +121,7 @@ header[data-testid="stHeader"] { background: transparent; }
 .eg-key i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
 .eg-key i.line { width: 18px; height: 0; border-top: 2px dashed #e6e9ef; border-radius: 0; }
 
-/* ===== Tabs: navigasi pill (Streamlit 1.64 memakai react-aria) ===== */
+/* ===== Tabs: pill navigation (Streamlit 1.64 uses react-aria) ===== */
 div[data-testid="stTabs"] [role="tablist"] {
     display: flex;
     width: fit-content;
