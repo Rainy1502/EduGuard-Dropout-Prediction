@@ -1,0 +1,795 @@
+Student_id,Program_studi,Usia_saat_mendaftar,MK_lulus_smt_2,Uang_kuliah_lunas,Probabilitas_dropout,Tingkat_risiko,Prediksi
+1558,Management,18,0,1,0.9988,Tinggi,Dropout
+2240,Veterinary Nursing,25,0,0,0.996,Tinggi,Dropout
+3078,Informatics Engineering,27,0,0,0.9954,Tinggi,Dropout
+855,Informatics Engineering,18,0,0,0.9951,Tinggi,Dropout
+143,Management,22,0,0,0.9947,Tinggi,Dropout
+929,Veterinary Nursing,28,0,1,0.9946,Tinggi,Dropout
+2679,Agronomy,26,0,1,0.9942,Tinggi,Dropout
+764,Management,40,1,1,0.9941,Tinggi,Dropout
+90,Informatics Engineering,18,0,1,0.994,Tinggi,Dropout
+1249,Advertising and Marketing Management,21,1,1,0.9935,Tinggi,Dropout
+1564,Equinculture,20,2,0,0.9932,Tinggi,Dropout
+2361,Informatics Engineering,24,1,1,0.9931,Tinggi,Dropout
+1243,Informatics Engineering,25,1,1,0.9931,Tinggi,Dropout
+2795,Management (evening attendance),29,0,1,0.9922,Tinggi,Dropout
+1988,Management (evening attendance),34,0,1,0.9917,Tinggi,Dropout
+1862,Informatics Engineering,34,1,1,0.9917,Tinggi,Dropout
+3500,Agronomy,27,0,1,0.9908,Tinggi,Dropout
+1714,Veterinary Nursing,24,2,0,0.9904,Tinggi,Dropout
+167,Agronomy,47,0,1,0.99,Tinggi,Dropout
+506,Nursing,27,3,1,0.99,Tinggi,Dropout
+2327,Informatics Engineering,19,1,1,0.9896,Tinggi,Dropout
+943,Social Service,31,0,1,0.9895,Tinggi,Dropout
+1770,Management,32,3,1,0.9881,Tinggi,Dropout
+2759,Agronomy,23,0,1,0.9881,Tinggi,Dropout
+65,Communication Design,24,0,1,0.9881,Tinggi,Dropout
+3336,Journalism and Communication,21,1,1,0.9881,Tinggi,Dropout
+3926,Management,23,0,1,0.9875,Tinggi,Dropout
+4181,Basic Education,18,3,1,0.9875,Tinggi,Dropout
+3721,Agronomy,19,0,1,0.9871,Tinggi,Dropout
+3413,Management,18,0,1,0.9868,Tinggi,Dropout
+2301,Informatics Engineering,23,1,1,0.9866,Tinggi,Dropout
+970,Informatics Engineering,24,2,1,0.9865,Tinggi,Dropout
+976,Informatics Engineering,18,3,0,0.9865,Tinggi,Dropout
+71,Management,18,0,1,0.9864,Tinggi,Dropout
+2705,Advertising and Marketing Management,19,0,1,0.9859,Tinggi,Dropout
+4414,Biofuel Production Technologies,25,2,1,0.9857,Tinggi,Dropout
+2588,Management,24,1,1,0.9855,Tinggi,Dropout
+2595,Management,23,1,1,0.9851,Tinggi,Dropout
+3897,Communication Design,22,0,1,0.985,Tinggi,Dropout
+2555,Informatics Engineering,18,3,1,0.9848,Tinggi,Dropout
+1569,Oral Hygiene,19,2,1,0.9847,Tinggi,Dropout
+1823,Management,19,0,1,0.9845,Tinggi,Dropout
+4282,Veterinary Nursing,21,0,1,0.9843,Tinggi,Dropout
+4312,Informatics Engineering,18,1,1,0.9841,Tinggi,Dropout
+2516,Informatics Engineering,20,1,1,0.9839,Tinggi,Dropout
+2783,Journalism and Communication,23,2,1,0.9838,Tinggi,Dropout
+3561,Nursing,33,0,1,0.9834,Tinggi,Dropout
+2258,Agronomy,20,2,1,0.9833,Tinggi,Dropout
+192,Social Service (evening attendance),23,1,1,0.9832,Tinggi,Dropout
+559,Tourism,23,3,1,0.9827,Tinggi,Dropout
+2689,Informatics Engineering,20,0,1,0.9824,Tinggi,Dropout
+4025,Oral Hygiene,20,2,1,0.9822,Tinggi,Dropout
+2364,Informatics Engineering,22,2,1,0.9817,Tinggi,Dropout
+2968,Nursing,18,0,1,0.9817,Tinggi,Dropout
+1969,Basic Education,18,3,1,0.9816,Tinggi,Dropout
+4173,Management,18,1,1,0.9815,Tinggi,Dropout
+3479,Social Service,28,1,1,0.9812,Tinggi,Dropout
+838,Oral Hygiene,23,2,1,0.981,Tinggi,Dropout
+3934,Management,19,2,1,0.9804,Tinggi,Dropout
+2717,Oral Hygiene,26,0,1,0.9802,Tinggi,Dropout
+4186,Management (evening attendance),20,0,1,0.9802,Tinggi,Dropout
+3574,Informatics Engineering,18,0,1,0.9799,Tinggi,Dropout
+3151,Equinculture,20,2,1,0.9799,Tinggi,Dropout
+2185,Social Service,19,2,1,0.9798,Tinggi,Dropout
+3825,Informatics Engineering,18,1,1,0.9797,Tinggi,Dropout
+254,Journalism and Communication,18,0,1,0.9796,Tinggi,Dropout
+2922,Social Service (evening attendance),34,0,1,0.9796,Tinggi,Dropout
+3329,Informatics Engineering,34,2,1,0.9794,Tinggi,Dropout
+3633,Social Service,21,2,1,0.9792,Tinggi,Dropout
+1681,Informatics Engineering,19,2,1,0.9791,Tinggi,Dropout
+1459,Advertising and Marketing Management,19,1,1,0.9775,Tinggi,Dropout
+1437,Informatics Engineering,19,2,1,0.9774,Tinggi,Dropout
+1754,Informatics Engineering,20,2,1,0.9767,Tinggi,Dropout
+3545,Management (evening attendance),38,3,1,0.9766,Tinggi,Dropout
+359,Agronomy,30,0,1,0.9763,Tinggi,Dropout
+3591,Management,19,0,1,0.9763,Tinggi,Dropout
+2385,Informatics Engineering,20,0,1,0.9758,Tinggi,Dropout
+1828,Veterinary Nursing,21,2,1,0.9757,Tinggi,Dropout
+17,Social Service,18,2,1,0.9754,Tinggi,Dropout
+4382,Social Service,20,0,1,0.9745,Tinggi,Dropout
+2726,Equinculture,21,2,1,0.974,Tinggi,Dropout
+33,Management,18,2,0,0.9737,Tinggi,Dropout
+4149,Management,20,2,1,0.9735,Tinggi,Dropout
+2564,Social Service,20,0,1,0.9733,Tinggi,Dropout
+391,Veterinary Nursing,21,1,1,0.9731,Tinggi,Dropout
+2845,Management (evening attendance),50,3,1,0.9717,Tinggi,Dropout
+1784,Management,19,2,1,0.9714,Tinggi,Dropout
+3716,Management,20,2,1,0.9713,Tinggi,Dropout
+3611,Informatics Engineering,19,3,1,0.9713,Tinggi,Dropout
+2489,Management,20,2,1,0.9707,Tinggi,Dropout
+442,Equinculture,18,3,1,0.97,Tinggi,Dropout
+2458,Management,27,1,1,0.97,Tinggi,Dropout
+511,Communication Design,18,0,1,0.9697,Tinggi,Dropout
+964,Informatics Engineering,18,2,1,0.9696,Tinggi,Dropout
+428,Management,20,2,1,0.9693,Tinggi,Dropout
+2930,Nursing,19,1,1,0.9689,Tinggi,Dropout
+3626,Social Service,20,1,1,0.9672,Tinggi,Dropout
+64,Communication Design,19,1,1,0.9663,Tinggi,Dropout
+931,Management,18,2,1,0.9661,Tinggi,Dropout
+2834,Advertising and Marketing Management,22,2,1,0.966,Tinggi,Dropout
+2194,Informatics Engineering,18,3,1,0.9636,Tinggi,Dropout
+836,Informatics Engineering,18,2,1,0.9633,Tinggi,Dropout
+806,Management,20,3,1,0.9632,Tinggi,Dropout
+3780,Oral Hygiene,25,3,1,0.9632,Tinggi,Dropout
+1718,Nursing,33,1,1,0.9627,Tinggi,Dropout
+1114,Management (evening attendance),25,3,1,0.9627,Tinggi,Dropout
+2237,Tourism,19,2,1,0.9607,Tinggi,Dropout
+3326,Animation and Multimedia Design,19,2,1,0.9606,Tinggi,Dropout
+657,Social Service,18,2,1,0.9599,Tinggi,Dropout
+2841,Veterinary Nursing,25,2,1,0.9597,Tinggi,Dropout
+1897,Veterinary Nursing,21,2,1,0.9597,Tinggi,Dropout
+1300,Tourism,26,3,1,0.9587,Tinggi,Dropout
+4407,Communication Design,20,2,1,0.9586,Tinggi,Dropout
+1534,Informatics Engineering,30,3,1,0.9583,Tinggi,Dropout
+925,Management (evening attendance),37,3,1,0.9581,Tinggi,Dropout
+3938,Tourism,22,2,1,0.9579,Tinggi,Dropout
+1962,Nursing,20,0,1,0.9575,Tinggi,Dropout
+3357,Informatics Engineering,20,3,1,0.9575,Tinggi,Dropout
+1475,Informatics Engineering,20,2,1,0.9572,Tinggi,Dropout
+1531,Agronomy,39,3,1,0.957,Tinggi,Dropout
+4296,Agronomy,28,6,1,0.9569,Tinggi,Dropout
+3344,Informatics Engineering,19,2,1,0.9561,Tinggi,Dropout
+2435,Veterinary Nursing,21,3,1,0.9555,Tinggi,Dropout
+642,Management,18,2,1,0.9552,Tinggi,Dropout
+3690,Equinculture,33,3,1,0.9549,Tinggi,Dropout
+4336,Management,21,2,1,0.9546,Tinggi,Dropout
+1885,Nursing,48,3,1,0.9546,Tinggi,Dropout
+4236,Social Service,22,3,1,0.9538,Tinggi,Dropout
+3367,Management (evening attendance),26,3,1,0.9536,Tinggi,Dropout
+647,Social Service,21,1,1,0.9532,Tinggi,Dropout
+46,Management (evening attendance),24,3,1,0.9528,Tinggi,Dropout
+2289,Informatics Engineering,19,2,1,0.9518,Tinggi,Dropout
+2765,Management (evening attendance),25,3,1,0.9516,Tinggi,Dropout
+3968,Nursing,20,0,1,0.9509,Tinggi,Dropout
+3833,Communication Design,34,7,1,0.9508,Tinggi,Dropout
+1593,Management,18,2,1,0.9505,Tinggi,Dropout
+1706,Informatics Engineering,18,3,1,0.9505,Tinggi,Dropout
+2396,Journalism and Communication,22,3,1,0.9502,Tinggi,Dropout
+1327,Veterinary Nursing,21,2,1,0.9499,Tinggi,Dropout
+2248,Nursing,21,0,1,0.9494,Tinggi,Dropout
+3698,Tourism,19,2,1,0.9494,Tinggi,Dropout
+3512,Equinculture,20,2,1,0.9491,Tinggi,Dropout
+527,Informatics Engineering,24,3,1,0.9484,Tinggi,Dropout
+3821,Agronomy,22,2,1,0.9479,Tinggi,Dropout
+3779,Veterinary Nursing,23,2,1,0.9462,Tinggi,Dropout
+2243,Informatics Engineering,19,2,1,0.9456,Tinggi,Dropout
+345,Management,26,2,1,0.9452,Tinggi,Dropout
+4337,Journalism and Communication,20,1,1,0.943,Tinggi,Dropout
+3160,Communication Design,20,2,1,0.9425,Tinggi,Dropout
+3738,Tourism,21,2,1,0.9412,Tinggi,Dropout
+1923,Basic Education,18,3,1,0.9411,Tinggi,Dropout
+3524,Advertising and Marketing Management,21,3,1,0.9411,Tinggi,Dropout
+3584,Management,19,5,0,0.9411,Tinggi,Dropout
+2556,Informatics Engineering,18,2,1,0.9386,Tinggi,Dropout
+2208,Management,22,3,1,0.9384,Tinggi,Dropout
+4171,Basic Education,20,3,1,0.9379,Tinggi,Dropout
+2698,Advertising and Marketing Management,21,4,0,0.9379,Tinggi,Dropout
+402,Tourism,20,3,1,0.9361,Tinggi,Dropout
+1269,Management (evening attendance),23,5,1,0.9358,Tinggi,Dropout
+2471,Equinculture,19,2,1,0.934,Tinggi,Dropout
+4148,Veterinary Nursing,44,2,0,0.9332,Tinggi,Dropout
+1325,Management,18,2,1,0.9332,Tinggi,Dropout
+441,Oral Hygiene,18,1,1,0.9328,Tinggi,Dropout
+4276,Informatics Engineering,18,3,1,0.9323,Tinggi,Dropout
+2434,Informatics Engineering,18,3,1,0.9323,Tinggi,Dropout
+1658,Veterinary Nursing,20,2,1,0.9315,Tinggi,Dropout
+3467,Management,20,2,1,0.9308,Tinggi,Dropout
+4199,Basic Education,22,4,1,0.9302,Tinggi,Dropout
+153,Basic Education,18,5,1,0.9302,Tinggi,Dropout
+998,Veterinary Nursing,22,2,1,0.9299,Tinggi,Dropout
+392,Nursing,26,5,1,0.9298,Tinggi,Dropout
+2109,Veterinary Nursing,18,3,1,0.9292,Tinggi,Dropout
+3052,Management,19,3,1,0.9291,Tinggi,Dropout
+3385,Veterinary Nursing,19,3,1,0.9226,Tinggi,Dropout
+2451,Animation and Multimedia Design,18,0,0,0.9223,Tinggi,Dropout
+2820,Journalism and Communication,18,3,1,0.9221,Tinggi,Dropout
+2146,Equinculture,18,5,0,0.9216,Tinggi,Dropout
+2242,Management (evening attendance),37,3,1,0.9207,Tinggi,Dropout
+380,Veterinary Nursing,21,2,1,0.9205,Tinggi,Dropout
+3342,Advertising and Marketing Management,20,4,0,0.92,Tinggi,Dropout
+1821,Veterinary Nursing,19,3,0,0.9182,Tinggi,Dropout
+1742,Tourism,19,2,1,0.918,Tinggi,Dropout
+2602,Tourism,22,3,1,0.9162,Tinggi,Dropout
+1428,Tourism,19,2,1,0.916,Tinggi,Dropout
+2342,Informatics Engineering,18,3,1,0.9158,Tinggi,Dropout
+547,Informatics Engineering,25,2,1,0.9148,Tinggi,Dropout
+4270,Communication Design,18,1,1,0.9115,Tinggi,Dropout
+2393,Management,18,3,1,0.9113,Tinggi,Dropout
+1921,Veterinary Nursing,20,2,1,0.9111,Tinggi,Dropout
+1896,Communication Design,19,3,1,0.9095,Tinggi,Dropout
+503,Communication Design,18,4,0,0.909,Tinggi,Dropout
+3516,Journalism and Communication,23,4,1,0.9068,Tinggi,Dropout
+1957,Social Service,18,2,1,0.9063,Tinggi,Dropout
+2467,Informatics Engineering,18,1,1,0.9051,Tinggi,Dropout
+652,Veterinary Nursing,23,6,0,0.8986,Tinggi,Dropout
+3193,Management,21,3,1,0.8972,Tinggi,Dropout
+383,Social Service,19,3,1,0.8966,Tinggi,Dropout
+187,Social Service,21,4,0,0.8961,Tinggi,Dropout
+557,Management,20,3,1,0.8941,Tinggi,Dropout
+3340,Advertising and Marketing Management,24,4,1,0.894,Tinggi,Dropout
+2303,Management,22,2,1,0.8935,Tinggi,Dropout
+3842,Social Service,20,3,1,0.8915,Tinggi,Dropout
+3452,Nursing,28,5,1,0.8912,Tinggi,Dropout
+4274,Veterinary Nursing,18,3,1,0.891,Tinggi,Dropout
+2036,Nursing,22,4,1,0.8896,Tinggi,Dropout
+2723,Veterinary Nursing,21,3,1,0.8891,Tinggi,Dropout
+909,Social Service,20,3,1,0.8885,Tinggi,Dropout
+643,Management,18,3,1,0.8882,Tinggi,Dropout
+1103,Basic Education,18,4,1,0.8881,Tinggi,Dropout
+2279,Communication Design,19,3,1,0.8881,Tinggi,Dropout
+2367,Animation and Multimedia Design,23,11,1,0.8862,Tinggi,Dropout
+3156,Management,18,3,1,0.8853,Tinggi,Dropout
+4012,Management,19,3,1,0.8831,Tinggi,Dropout
+2734,Social Service,18,3,1,0.8818,Tinggi,Dropout
+1065,Basic Education,18,4,1,0.8788,Tinggi,Dropout
+3462,Nursing,38,5,1,0.8784,Tinggi,Dropout
+1751,Agronomy,21,4,1,0.8781,Tinggi,Dropout
+2106,Nursing,18,2,1,0.8779,Tinggi,Dropout
+3597,Agronomy,22,3,1,0.8772,Tinggi,Dropout
+1850,Tourism,19,4,1,0.8766,Tinggi,Dropout
+1971,Social Service,20,3,1,0.8761,Tinggi,Dropout
+3074,Informatics Engineering,33,3,1,0.8747,Tinggi,Dropout
+833,Equinculture,21,2,1,0.8746,Tinggi,Dropout
+2491,Journalism and Communication,20,4,1,0.8727,Tinggi,Dropout
+4398,Basic Education,21,3,1,0.8698,Tinggi,Dropout
+4286,Management,22,3,1,0.8694,Tinggi,Dropout
+3908,Social Service,22,3,1,0.8692,Tinggi,Dropout
+3919,Advertising and Marketing Management,20,3,1,0.8685,Tinggi,Dropout
+2223,Informatics Engineering,18,3,1,0.8683,Tinggi,Dropout
+403,Journalism and Communication,19,3,1,0.8669,Tinggi,Dropout
+3900,Management,33,5,1,0.8647,Tinggi,Dropout
+2536,Basic Education,19,4,1,0.8636,Tinggi,Dropout
+2111,Veterinary Nursing,19,3,1,0.861,Tinggi,Dropout
+1588,Informatics Engineering,21,3,1,0.8561,Tinggi,Dropout
+325,Veterinary Nursing,19,3,1,0.8559,Tinggi,Dropout
+1682,Journalism and Communication,19,3,1,0.8555,Tinggi,Dropout
+3604,Informatics Engineering,18,3,1,0.8535,Tinggi,Dropout
+3438,Management (evening attendance),29,9,1,0.8533,Tinggi,Dropout
+118,Management,20,3,1,0.8527,Tinggi,Dropout
+1330,Veterinary Nursing,18,3,1,0.8525,Tinggi,Dropout
+2239,Equinculture,24,3,1,0.8511,Tinggi,Dropout
+2512,Nursing,18,5,1,0.8495,Tinggi,Dropout
+2686,Informatics Engineering,20,3,1,0.8486,Tinggi,Dropout
+4065,Animation and Multimedia Design,22,11,1,0.8482,Tinggi,Dropout
+1809,Informatics Engineering,18,4,0,0.845,Tinggi,Dropout
+2987,Basic Education,20,4,1,0.8445,Tinggi,Dropout
+2387,Journalism and Communication,22,3,1,0.8439,Tinggi,Dropout
+2198,Communication Design,19,4,1,0.8439,Tinggi,Dropout
+562,Equinculture,20,3,1,0.8404,Tinggi,Dropout
+808,Equinculture,23,4,0,0.8379,Tinggi,Dropout
+3902,Tourism,20,3,1,0.8367,Tinggi,Dropout
+2763,Social Service (evening attendance),26,3,1,0.8333,Tinggi,Dropout
+4193,Basic Education,22,5,1,0.8247,Tinggi,Dropout
+1603,Tourism,18,3,1,0.8207,Tinggi,Dropout
+2559,Management,19,2,1,0.8192,Tinggi,Dropout
+546,Management,20,3,1,0.8191,Tinggi,Dropout
+548,Advertising and Marketing Management,22,2,1,0.8152,Tinggi,Dropout
+2545,Agronomy,19,4,1,0.8148,Tinggi,Dropout
+1390,Veterinary Nursing,21,3,1,0.8141,Tinggi,Dropout
+1153,Management,19,3,1,0.8088,Tinggi,Dropout
+3219,Social Service (evening attendance),23,7,1,0.8082,Tinggi,Dropout
+96,Informatics Engineering,19,3,1,0.8081,Tinggi,Dropout
+1334,Social Service,20,4,1,0.808,Tinggi,Dropout
+1547,Journalism and Communication,18,5,0,0.8019,Tinggi,Dropout
+2773,Nursing,19,5,1,0.8009,Tinggi,Dropout
+1955,Nursing,17,5,1,0.8003,Tinggi,Dropout
+2587,Management,21,3,1,0.8001,Tinggi,Dropout
+678,Basic Education,18,4,1,0.7948,Tinggi,Dropout
+3120,Veterinary Nursing,21,3,1,0.7942,Tinggi,Dropout
+2282,Agronomy,21,4,1,0.7883,Tinggi,Dropout
+3395,Management,19,3,1,0.7863,Tinggi,Dropout
+2492,Management,19,2,1,0.7858,Tinggi,Dropout
+2369,Journalism and Communication,29,5,0,0.7846,Tinggi,Dropout
+2209,Management,22,3,1,0.7837,Tinggi,Dropout
+4082,Veterinary Nursing,21,4,1,0.7819,Tinggi,Dropout
+1772,Management,24,4,1,0.7782,Tinggi,Dropout
+2375,Equinculture,24,3,1,0.7765,Tinggi,Dropout
+53,Journalism and Communication,20,3,1,0.7754,Tinggi,Dropout
+341,Veterinary Nursing,19,3,1,0.7723,Tinggi,Dropout
+1133,Management,19,3,1,0.7716,Tinggi,Dropout
+2760,Agronomy,20,4,1,0.7714,Tinggi,Dropout
+2481,Animation and Multimedia Design,22,0,1,0.7714,Tinggi,Dropout
+3647,Veterinary Nursing,26,4,1,0.7693,Tinggi,Dropout
+542,Management,20,2,1,0.7685,Tinggi,Dropout
+112,Management,18,3,1,0.7683,Tinggi,Dropout
+1860,Management (evening attendance),27,2,1,0.7661,Tinggi,Dropout
+2373,Animation and Multimedia Design,22,0,1,0.7658,Tinggi,Dropout
+2213,Informatics Engineering,19,3,1,0.7652,Tinggi,Dropout
+3379,Management,19,3,1,0.7646,Tinggi,Dropout
+1414,Journalism and Communication,19,3,1,0.7646,Tinggi,Dropout
+531,Management,19,3,1,0.754,Tinggi,Dropout
+2696,Nursing,30,6,1,0.7533,Tinggi,Dropout
+1960,Veterinary Nursing,24,6,0,0.7519,Tinggi,Dropout
+2442,Social Service (evening attendance),39,3,1,0.7514,Tinggi,Dropout
+1504,Nursing,35,5,1,0.7514,Tinggi,Dropout
+842,Management,22,4,0,0.7505,Tinggi,Dropout
+3786,Agronomy,20,3,1,0.7496,Tinggi,Dropout
+3610,Animation and Multimedia Design,19,0,1,0.7484,Tinggi,Dropout
+1838,Nursing,39,5,1,0.7482,Tinggi,Dropout
+2592,Basic Education,22,6,0,0.7465,Tinggi,Dropout
+1230,Veterinary Nursing,21,5,1,0.7432,Tinggi,Dropout
+2347,Advertising and Marketing Management,19,4,1,0.7431,Tinggi,Dropout
+3544,Veterinary Nursing,19,5,0,0.7398,Tinggi,Dropout
+1336,Basic Education,19,5,1,0.7384,Tinggi,Dropout
+2069,Basic Education,19,5,1,0.7384,Tinggi,Dropout
+494,Veterinary Nursing,22,4,1,0.7376,Tinggi,Dropout
+3427,Management,24,2,1,0.7363,Tinggi,Dropout
+110,Basic Education,20,3,1,0.7346,Tinggi,Dropout
+1040,Basic Education,18,5,1,0.7337,Tinggi,Dropout
+1775,Tourism,19,3,1,0.7305,Tinggi,Dropout
+701,Veterinary Nursing,20,3,0,0.7303,Tinggi,Dropout
+592,Nursing,19,5,1,0.7299,Tinggi,Dropout
+1757,Animation and Multimedia Design,19,10,1,0.7267,Tinggi,Dropout
+656,Social Service,19,3,1,0.7186,Tinggi,Dropout
+1582,Communication Design,18,4,1,0.7181,Tinggi,Dropout
+2568,Social Service (evening attendance),26,5,1,0.7163,Tinggi,Dropout
+306,Advertising and Marketing Management,19,4,1,0.7124,Tinggi,Dropout
+484,Veterinary Nursing,20,2,1,0.7118,Tinggi,Dropout
+1104,Management,21,7,1,0.7107,Tinggi,Dropout
+4321,Management,21,4,1,0.7088,Tinggi,Dropout
+2120,Animation and Multimedia Design,18,0,1,0.7068,Tinggi,Dropout
+2671,Informatics Engineering,18,5,1,0.7064,Tinggi,Dropout
+1338,Management,19,4,0,0.7016,Tinggi,Dropout
+3895,Nursing,21,5,1,0.6925,Tinggi,Dropout
+852,Basic Education,22,4,1,0.6893,Tinggi,Dropout
+1090,Animation and Multimedia Design,18,0,1,0.6887,Tinggi,Dropout
+60,Animation and Multimedia Design,18,0,1,0.6865,Tinggi,Dropout
+3212,Animation and Multimedia Design,18,0,1,0.6856,Tinggi,Dropout
+1689,Animation and Multimedia Design,20,0,1,0.6856,Tinggi,Dropout
+638,Management (evening attendance),27,4,1,0.6803,Tinggi,Dropout
+3228,Veterinary Nursing,23,4,1,0.6794,Tinggi,Dropout
+1786,Management,25,4,1,0.6779,Tinggi,Dropout
+2384,Agronomy,21,9,1,0.6736,Tinggi,Dropout
+3608,Animation and Multimedia Design,22,0,1,0.6732,Tinggi,Dropout
+2446,Nursing,34,4,1,0.6696,Tinggi,Dropout
+3140,Basic Education,19,4,1,0.6687,Tinggi,Dropout
+2266,Veterinary Nursing,21,4,0,0.6672,Tinggi,Dropout
+2413,Management (evening attendance),43,4,1,0.6602,Tinggi,Dropout
+3195,Management (evening attendance),24,9,1,0.6588,Tinggi,Dropout
+775,Veterinary Nursing,19,4,1,0.6572,Tinggi,Dropout
+3068,Nursing,19,5,1,0.6551,Tinggi,Dropout
+2028,Animation and Multimedia Design,17,0,1,0.6548,Tinggi,Dropout
+646,Management,19,3,1,0.6505,Tinggi,Dropout
+2729,Veterinary Nursing,26,5,0,0.649,Tinggi,Dropout
+4162,Tourism,18,5,0,0.6434,Tinggi,Dropout
+2825,Nursing,19,5,1,0.6431,Tinggi,Dropout
+3941,Management,36,4,1,0.6416,Tinggi,Dropout
+2025,Management (evening attendance),34,4,1,0.6416,Tinggi,Dropout
+3241,Management (evening attendance),30,5,1,0.6409,Tinggi,Dropout
+1774,Agronomy,25,4,1,0.6352,Tinggi,Dropout
+3464,Basic Education,19,5,1,0.6323,Tinggi,Dropout
+2322,Communication Design,38,4,1,0.6318,Tinggi,Dropout
+3936,Tourism,19,4,1,0.6314,Tinggi,Dropout
+3638,Basic Education,33,6,0,0.6302,Tinggi,Dropout
+2235,Tourism,18,4,1,0.6301,Tinggi,Dropout
+1073,Basic Education,19,5,1,0.6271,Tinggi,Dropout
+2058,Veterinary Nursing,20,2,1,0.6267,Tinggi,Dropout
+331,Basic Education,18,6,1,0.6256,Tinggi,Dropout
+4365,Social Service,18,4,1,0.6254,Tinggi,Dropout
+1154,Nursing,19,5,1,0.6144,Tinggi,Dropout
+365,Nursing,19,5,1,0.6144,Tinggi,Dropout
+3551,Nursing,21,5,1,0.611,Tinggi,Dropout
+4083,Tourism,19,4,1,0.6051,Tinggi,Dropout
+3930,Agronomy,24,4,1,0.593,Tinggi,Dropout
+3184,Informatics Engineering,28,4,1,0.5922,Tinggi,Dropout
+698,Tourism,20,5,1,0.5915,Tinggi,Dropout
+2674,Management (evening attendance),40,4,1,0.5874,Tinggi,Dropout
+1349,Veterinary Nursing,23,8,0,0.5862,Tinggi,Dropout
+549,Nursing,18,6,1,0.5854,Tinggi,Dropout
+3076,Advertising and Marketing Management,20,5,1,0.5827,Tinggi,Dropout
+1562,Equinculture,21,4,1,0.581,Tinggi,Dropout
+242,Animation and Multimedia Design,24,9,1,0.5796,Tinggi,Dropout
+1147,Animation and Multimedia Design,18,0,1,0.5777,Tinggi,Dropout
+151,Animation and Multimedia Design,18,0,1,0.5666,Tinggi,Dropout
+2687,Management,20,3,1,0.5658,Tinggi,Dropout
+3285,Management (evening attendance),25,4,1,0.5644,Tinggi,Dropout
+632,Basic Education,19,4,1,0.5605,Tinggi,Dropout
+2197,Management,20,4,1,0.559,Tinggi,Dropout
+2558,Animation and Multimedia Design,18,0,1,0.5515,Tinggi,Dropout
+1536,Management (evening attendance),41,6,1,0.5499,Tinggi,Dropout
+63,Animation and Multimedia Design,19,0,1,0.5498,Tinggi,Dropout
+784,Nursing,18,6,1,0.5487,Tinggi,Dropout
+4203,Animation and Multimedia Design,20,0,1,0.5405,Tinggi,Dropout
+329,Basic Education,18,5,1,0.5401,Tinggi,Dropout
+2600,Basic Education,18,5,1,0.537,Tinggi,Dropout
+730,Advertising and Marketing Management,18,5,1,0.5369,Tinggi,Dropout
+1881,Informatics Engineering,41,6,1,0.536,Tinggi,Dropout
+1753,Communication Design,20,4,1,0.5359,Tinggi,Dropout
+4355,Management (evening attendance),30,4,1,0.535,Tinggi,Dropout
+2265,Basic Education,42,5,1,0.5343,Tinggi,Dropout
+4232,Management (evening attendance),25,4,1,0.5309,Tinggi,Dropout
+389,Basic Education,22,5,1,0.5276,Tinggi,Dropout
+2599,Veterinary Nursing,21,4,1,0.5119,Tinggi,Dropout
+2788,Advertising and Marketing Management,19,4,1,0.5105,Tinggi,Dropout
+737,Journalism and Communication,32,6,1,0.5074,Tinggi,Dropout
+594,Advertising and Marketing Management,20,4,1,0.5073,Tinggi,Dropout
+3397,Management,18,4,1,0.5067,Tinggi,Dropout
+1083,Communication Design,21,4,1,0.5043,Tinggi,Dropout
+1595,Management,19,4,1,0.5021,Tinggi,Dropout
+1472,Agronomy,20,5,1,0.5014,Tinggi,Dropout
+2157,Animation and Multimedia Design,18,0,1,0.4991,Tinggi,Dropout
+3159,Tourism,21,3,1,0.4954,Tinggi,Dropout
+1279,Social Service (evening attendance),24,4,1,0.4952,Tinggi,Dropout
+801,Communication Design,22,4,0,0.4948,Tinggi,Dropout
+2873,Management (evening attendance),28,9,1,0.4902,Tinggi,Dropout
+2939,Management (evening attendance),34,4,1,0.4899,Sedang,Graduate
+1929,Communication Design,18,5,0,0.489,Sedang,Graduate
+2152,Veterinary Nursing,21,5,1,0.4875,Sedang,Graduate
+3203,Journalism and Communication,20,3,1,0.4817,Sedang,Graduate
+4154,Animation and Multimedia Design,19,0,1,0.4817,Sedang,Graduate
+3617,Informatics Engineering,18,5,0,0.4777,Sedang,Graduate
+3092,Basic Education,20,5,1,0.4744,Sedang,Graduate
+1121,Social Service,24,5,1,0.4729,Sedang,Graduate
+2107,Communication Design,18,4,1,0.4722,Sedang,Graduate
+3841,Tourism,19,3,1,0.4689,Sedang,Graduate
+84,Tourism,18,3,1,0.4679,Sedang,Graduate
+363,Management,20,4,1,0.4646,Sedang,Graduate
+800,Basic Education,18,4,1,0.4572,Sedang,Graduate
+2191,Animation and Multimedia Design,18,0,1,0.4542,Sedang,Graduate
+3407,Basic Education,19,5,1,0.451,Sedang,Graduate
+1909,Basic Education,19,5,1,0.4489,Sedang,Graduate
+3180,Nursing,19,5,1,0.4462,Sedang,Graduate
+171,Veterinary Nursing,28,4,1,0.4441,Sedang,Graduate
+2833,Agronomy,34,6,0,0.444,Sedang,Graduate
+816,Management,21,3,1,0.4438,Sedang,Graduate
+1032,Basic Education,18,4,1,0.4429,Sedang,Graduate
+3330,Management,21,3,1,0.4399,Sedang,Graduate
+4187,Veterinary Nursing,19,4,1,0.4377,Sedang,Graduate
+2878,Social Service (evening attendance),49,4,1,0.436,Sedang,Graduate
+3047,Veterinary Nursing,19,4,1,0.4355,Sedang,Graduate
+3086,Management,33,4,1,0.4334,Sedang,Graduate
+4267,Animation and Multimedia Design,21,0,1,0.4321,Sedang,Graduate
+2092,Veterinary Nursing,21,3,1,0.4288,Sedang,Graduate
+3925,Animation and Multimedia Design,21,9,1,0.4271,Sedang,Graduate
+610,Nursing,18,5,1,0.427,Sedang,Graduate
+1401,Animation and Multimedia Design,18,0,1,0.4244,Sedang,Graduate
+1429,Social Service,21,4,1,0.4239,Sedang,Graduate
+2722,Management,19,4,1,0.4219,Sedang,Graduate
+3744,Veterinary Nursing,28,4,1,0.4218,Sedang,Graduate
+1807,Informatics Engineering,19,3,1,0.4166,Sedang,Graduate
+1315,Advertising and Marketing Management,18,3,1,0.4146,Sedang,Graduate
+3660,Veterinary Nursing,20,4,1,0.4145,Sedang,Graduate
+2304,Informatics Engineering,19,5,1,0.4118,Sedang,Graduate
+3759,Veterinary Nursing,20,4,1,0.4099,Sedang,Graduate
+1463,Advertising and Marketing Management,19,4,1,0.4055,Sedang,Graduate
+3811,Nursing,18,5,1,0.4047,Sedang,Graduate
+1795,Nursing,21,6,1,0.4035,Sedang,Graduate
+1771,Basic Education,23,5,1,0.4028,Sedang,Graduate
+1671,Management (evening attendance),25,4,1,0.4002,Sedang,Graduate
+819,Nursing,20,7,0,0.3952,Sedang,Graduate
+1822,Nursing,19,5,1,0.3938,Sedang,Graduate
+2990,Tourism,18,5,1,0.3922,Sedang,Graduate
+1468,Informatics Engineering,21,4,1,0.3915,Sedang,Graduate
+347,Social Service,36,9,1,0.3902,Sedang,Graduate
+4117,Veterinary Nursing,18,6,0,0.3879,Sedang,Graduate
+3135,Nursing,18,5,1,0.3834,Sedang,Graduate
+2860,Social Service (evening attendance),48,4,1,0.3822,Sedang,Graduate
+4235,Management,20,4,1,0.3779,Sedang,Graduate
+2590,Basic Education,18,5,1,0.3685,Sedang,Graduate
+984,Management (evening attendance),34,4,1,0.3681,Sedang,Graduate
+620,Veterinary Nursing,19,4,1,0.3675,Sedang,Graduate
+3442,Advertising and Marketing Management,19,5,1,0.3596,Sedang,Graduate
+1979,Veterinary Nursing,20,3,1,0.3594,Sedang,Graduate
+4116,Communication Design,20,3,1,0.3583,Sedang,Graduate
+1089,Basic Education,18,6,1,0.3561,Sedang,Graduate
+3702,Management,21,3,1,0.356,Sedang,Graduate
+1711,Management (evening attendance),31,7,1,0.3549,Sedang,Graduate
+4133,Veterinary Nursing,21,8,1,0.3545,Sedang,Graduate
+762,Animation and Multimedia Design,20,0,1,0.3544,Sedang,Graduate
+1580,Animation and Multimedia Design,18,0,1,0.3533,Sedang,Graduate
+1756,Informatics Engineering,18,5,0,0.3529,Sedang,Graduate
+1728,Equinculture,20,4,1,0.3507,Sedang,Graduate
+1525,Animation and Multimedia Design,18,0,1,0.3489,Sedang,Graduate
+3313,Communication Design,31,6,1,0.3484,Sedang,Graduate
+3557,Tourism,25,4,1,0.3477,Sedang,Graduate
+4344,Nursing,18,6,1,0.3474,Sedang,Graduate
+1844,Management,20,5,1,0.3462,Sedang,Graduate
+4258,Advertising and Marketing Management,21,4,1,0.3436,Sedang,Graduate
+4178,Veterinary Nursing,27,5,1,0.3427,Sedang,Graduate
+117,Social Service,20,4,1,0.341,Sedang,Graduate
+1578,Management (evening attendance),28,4,1,0.3402,Sedang,Graduate
+2953,Advertising and Marketing Management,35,3,1,0.3394,Sedang,Graduate
+2810,Nursing,19,6,1,0.3377,Sedang,Graduate
+1606,Agronomy,20,8,1,0.3364,Sedang,Graduate
+2777,Animation and Multimedia Design,18,0,1,0.336,Sedang,Graduate
+1255,Veterinary Nursing,19,4,1,0.332,Sedang,Graduate
+1993,Social Service (evening attendance),25,4,1,0.3299,Sedang,Graduate
+1162,Nursing,32,7,1,0.3294,Sedang,Graduate
+3769,Basic Education,23,5,1,0.3246,Sedang,Graduate
+3652,Advertising and Marketing Management,21,4,1,0.3225,Sedang,Graduate
+2365,Agronomy,19,4,1,0.3203,Sedang,Graduate
+1596,Advertising and Marketing Management,19,4,1,0.3195,Sedang,Graduate
+2216,Journalism and Communication,19,8,1,0.3182,Sedang,Graduate
+128,Basic Education,18,5,1,0.3179,Sedang,Graduate
+3008,Management,19,4,1,0.3178,Sedang,Graduate
+3469,Management (evening attendance),29,4,1,0.3175,Sedang,Graduate
+2973,Veterinary Nursing,18,4,1,0.3171,Sedang,Graduate
+350,Social Service (evening attendance),20,4,1,0.3165,Sedang,Graduate
+739,Animation and Multimedia Design,19,10,1,0.3152,Sedang,Graduate
+2747,Nursing,20,6,1,0.3143,Sedang,Graduate
+437,Tourism,20,6,1,0.3142,Sedang,Graduate
+2584,Management (evening attendance),26,4,1,0.3129,Sedang,Graduate
+379,Basic Education,18,6,0,0.3123,Sedang,Graduate
+1512,Management (evening attendance),47,4,1,0.3073,Sedang,Graduate
+3555,Advertising and Marketing Management,19,5,1,0.3043,Sedang,Graduate
+1142,Management,19,3,1,0.3036,Sedang,Graduate
+2882,Social Service,22,5,1,0.2997,Sedang,Graduate
+3123,Advertising and Marketing Management,19,4,1,0.2976,Sedang,Graduate
+1317,Veterinary Nursing,19,4,1,0.2967,Sedang,Graduate
+3127,Social Service,21,3,1,0.2955,Sedang,Graduate
+2676,Tourism,27,4,1,0.2938,Sedang,Graduate
+465,Social Service,20,4,1,0.2934,Sedang,Graduate
+3232,Management,39,4,1,0.2933,Sedang,Graduate
+3238,Advertising and Marketing Management,22,4,1,0.2877,Sedang,Graduate
+368,Veterinary Nursing,19,5,1,0.2877,Sedang,Graduate
+3416,Nursing,20,6,1,0.2863,Sedang,Graduate
+3903,Management,35,4,1,0.2855,Sedang,Graduate
+1660,Animation and Multimedia Design,20,0,1,0.2817,Sedang,Graduate
+1894,Animation and Multimedia Design,18,0,1,0.2817,Sedang,Graduate
+4127,Veterinary Nursing,19,4,1,0.2797,Sedang,Graduate
+1119,Oral Hygiene,25,5,1,0.2787,Sedang,Graduate
+3543,Management (evening attendance),39,4,1,0.2776,Sedang,Graduate
+3737,Informatics Engineering,24,4,1,0.2706,Sedang,Graduate
+4322,Management (evening attendance),28,4,1,0.2702,Sedang,Graduate
+1465,Tourism,20,5,1,0.2662,Sedang,Graduate
+1422,Management,19,3,1,0.2659,Sedang,Graduate
+4413,Communication Design,19,5,1,0.2644,Sedang,Graduate
+1734,Social Service (evening attendance),44,9,1,0.2632,Sedang,Graduate
+874,Oral Hygiene,21,6,1,0.2632,Sedang,Graduate
+719,Management (evening attendance),37,5,1,0.263,Sedang,Graduate
+1408,Journalism and Communication,19,5,1,0.2615,Sedang,Graduate
+401,Communication Design,18,4,1,0.2612,Sedang,Graduate
+1990,Advertising and Marketing Management,18,5,1,0.2607,Sedang,Graduate
+3742,Informatics Engineering,28,5,1,0.2597,Sedang,Graduate
+545,Informatics Engineering,18,5,1,0.2583,Sedang,Graduate
+2302,Communication Design,18,5,1,0.2503,Sedang,Graduate
+1561,Biofuel Production Technologies,20,4,1,0.2462,Rendah,Graduate
+2651,Nursing,20,8,1,0.2399,Rendah,Graduate
+1185,Nursing,19,6,1,0.2394,Rendah,Graduate
+3980,Journalism and Communication,40,5,1,0.2385,Rendah,Graduate
+2285,Communication Design,20,4,1,0.238,Rendah,Graduate
+4038,Social Service,21,5,1,0.2347,Rendah,Graduate
+574,Management,20,5,1,0.2345,Rendah,Graduate
+3832,Advertising and Marketing Management,19,5,1,0.2308,Rendah,Graduate
+1597,Nursing,22,6,1,0.2247,Rendah,Graduate
+70,Tourism,26,5,1,0.2215,Rendah,Graduate
+2206,Informatics Engineering,20,6,1,0.2211,Rendah,Graduate
+4144,Oral Hygiene,24,7,1,0.2204,Rendah,Graduate
+1519,Animation and Multimedia Design,20,0,1,0.2182,Rendah,Graduate
+1458,Nursing,18,6,1,0.2177,Rendah,Graduate
+26,Social Service,18,4,1,0.2177,Rendah,Graduate
+4089,Management (evening attendance),33,9,1,0.2171,Rendah,Graduate
+2054,Nursing,19,6,1,0.2117,Rendah,Graduate
+2569,Management,41,5,1,0.2116,Rendah,Graduate
+2398,Journalism and Communication,19,5,1,0.209,Rendah,Graduate
+693,Tourism,21,4,1,0.209,Rendah,Graduate
+578,Management (evening attendance),28,5,1,0.2087,Rendah,Graduate
+3071,Advertising and Marketing Management,20,4,1,0.2086,Rendah,Graduate
+4172,Social Service,18,4,1,0.2076,Rendah,Graduate
+2869,Management,41,5,1,0.2061,Rendah,Graduate
+2635,Advertising and Marketing Management,20,4,1,0.204,Rendah,Graduate
+4192,Veterinary Nursing,20,4,1,0.2018,Rendah,Graduate
+3149,Management,20,4,1,0.1998,Rendah,Graduate
+3595,Equinculture,19,5,1,0.1995,Rendah,Graduate
+3297,Nursing,18,6,1,0.1995,Rendah,Graduate
+2897,Management (evening attendance),40,5,1,0.1969,Rendah,Graduate
+3615,Informatics Engineering,24,6,1,0.1966,Rendah,Graduate
+4244,Communication Design,18,6,1,0.1955,Rendah,Graduate
+939,Journalism and Communication,18,4,1,0.1953,Rendah,Graduate
+3628,Journalism and Communication,18,5,1,0.193,Rendah,Graduate
+31,Agronomy,21,5,1,0.1895,Rendah,Graduate
+1968,Veterinary Nursing,18,5,1,0.1879,Rendah,Graduate
+1471,Management,18,4,1,0.1867,Rendah,Graduate
+2832,Management,18,4,1,0.1864,Rendah,Graduate
+176,Advertising and Marketing Management,18,4,1,0.1863,Rendah,Graduate
+320,Nursing,20,6,1,0.1857,Rendah,Graduate
+3197,Agronomy,23,5,1,0.1849,Rendah,Graduate
+2775,Nursing,19,7,1,0.1831,Rendah,Graduate
+2778,Advertising and Marketing Management,19,5,1,0.182,Rendah,Graduate
+4339,Advertising and Marketing Management,18,4,1,0.1806,Rendah,Graduate
+4393,Management,18,5,1,0.1776,Rendah,Graduate
+2187,Communication Design,18,5,1,0.1765,Rendah,Graduate
+2131,Veterinary Nursing,18,4,1,0.1737,Rendah,Graduate
+507,Biofuel Production Technologies,26,5,1,0.1733,Rendah,Graduate
+899,Tourism,21,4,1,0.1723,Rendah,Graduate
+501,Veterinary Nursing,20,5,1,0.1703,Rendah,Graduate
+4374,Social Service,19,6,1,0.1691,Rendah,Graduate
+3682,Management,26,5,1,0.1689,Rendah,Graduate
+662,Nursing,19,6,1,0.168,Rendah,Graduate
+2630,Management (evening attendance),28,5,1,0.1674,Rendah,Graduate
+2838,Management,50,5,1,0.1668,Rendah,Graduate
+20,Basic Education,18,6,1,0.1665,Rendah,Graduate
+4058,Agronomy,22,4,1,0.1614,Rendah,Graduate
+2196,Journalism and Communication,19,6,1,0.1606,Rendah,Graduate
+3268,Management (evening attendance),35,5,1,0.1599,Rendah,Graduate
+52,Nursing,19,6,1,0.1594,Rendah,Graduate
+1433,Tourism,18,5,1,0.1592,Rendah,Graduate
+3405,Management (evening attendance),32,4,1,0.1576,Rendah,Graduate
+200,Nursing,35,3,1,0.156,Rendah,Graduate
+4229,Social Service (evening attendance),45,5,1,0.1549,Rendah,Graduate
+1920,Advertising and Marketing Management,20,5,1,0.1543,Rendah,Graduate
+4275,Tourism,25,5,1,0.1542,Rendah,Graduate
+1455,Informatics Engineering,20,4,1,0.1535,Rendah,Graduate
+404,Tourism,19,4,1,0.1528,Rendah,Graduate
+3530,Nursing,20,7,1,0.152,Rendah,Graduate
+1145,Management,20,4,1,0.149,Rendah,Graduate
+3666,Agronomy,43,5,1,0.1452,Rendah,Graduate
+3148,Nursing,20,6,1,0.1447,Rendah,Graduate
+3911,Journalism and Communication,20,5,1,0.1444,Rendah,Graduate
+1781,Advertising and Marketing Management,21,5,1,0.1422,Rendah,Graduate
+2340,Informatics Engineering,20,5,1,0.1415,Rendah,Graduate
+595,Agronomy,20,5,1,0.1412,Rendah,Graduate
+89,Management,23,5,1,0.1411,Rendah,Graduate
+1488,Advertising and Marketing Management,25,5,1,0.1409,Rendah,Graduate
+372,Management (evening attendance),31,4,1,0.1406,Rendah,Graduate
+3891,Basic Education,21,6,1,0.1403,Rendah,Graduate
+1609,Journalism and Communication,18,5,1,0.1373,Rendah,Graduate
+1212,Social Service,20,5,1,0.1371,Rendah,Graduate
+2420,Agronomy,24,5,1,0.1369,Rendah,Graduate
+720,Advertising and Marketing Management,18,5,1,0.1348,Rendah,Graduate
+3390,Social Service,21,5,1,0.1328,Rendah,Graduate
+1507,Management (evening attendance),31,4,1,0.1321,Rendah,Graduate
+3789,Agronomy,19,6,1,0.1301,Rendah,Graduate
+3283,Management,30,9,1,0.1301,Rendah,Graduate
+3701,Communication Design,18,5,1,0.1291,Rendah,Graduate
+2762,Social Service (evening attendance),45,6,1,0.129,Rendah,Graduate
+1602,Advertising and Marketing Management,21,4,1,0.1289,Rendah,Graduate
+1587,Management,18,4,1,0.1288,Rendah,Graduate
+4403,Basic Education,18,6,1,0.1278,Rendah,Graduate
+2998,Management,20,4,1,0.1268,Rendah,Graduate
+455,Management,19,4,1,0.1218,Rendah,Graduate
+1208,Agronomy,37,6,1,0.1216,Rendah,Graduate
+3411,Advertising and Marketing Management,19,4,1,0.1173,Rendah,Graduate
+1291,Informatics Engineering,18,6,1,0.1167,Rendah,Graduate
+251,Communication Design,19,5,1,0.116,Rendah,Graduate
+1377,Management,18,4,1,0.1153,Rendah,Graduate
+1816,Agronomy,24,6,1,0.1151,Rendah,Graduate
+467,Basic Education,20,8,1,0.1149,Rendah,Graduate
+928,Social Service (evening attendance),37,6,1,0.1134,Rendah,Graduate
+1708,Management,19,4,1,0.1117,Rendah,Graduate
+293,Agronomy,24,5,1,0.1113,Rendah,Graduate
+1435,Nursing,18,6,1,0.1104,Rendah,Graduate
+3274,Nursing,26,6,1,0.1103,Rendah,Graduate
+1156,Management,19,4,1,0.1098,Rendah,Graduate
+3888,Social Service,19,4,1,0.1091,Rendah,Graduate
+2371,Agronomy,20,5,1,0.1079,Rendah,Graduate
+4134,Tourism,18,5,1,0.1069,Rendah,Graduate
+3402,Advertising and Marketing Management,20,5,1,0.1042,Rendah,Graduate
+3314,Tourism,20,5,1,0.104,Rendah,Graduate
+495,Basic Education,18,6,1,0.1038,Rendah,Graduate
+4104,Management,19,4,1,0.1038,Rendah,Graduate
+2101,Journalism and Communication,21,5,1,0.1029,Rendah,Graduate
+1196,Basic Education,18,7,1,0.102,Rendah,Graduate
+3360,Management,21,5,1,0.1,Rendah,Graduate
+1666,Journalism and Communication,19,5,1,0.0997,Rendah,Graduate
+1397,Equinculture,20,6,1,0.0992,Rendah,Graduate
+4026,Management (evening attendance),38,5,1,0.0975,Rendah,Graduate
+2647,Communication Design,26,7,1,0.0974,Rendah,Graduate
+1149,Basic Education,18,6,1,0.0954,Rendah,Graduate
+1287,Communication Design,20,5,1,0.0951,Rendah,Graduate
+1694,Management,19,4,1,0.0945,Rendah,Graduate
+2916,Social Service (evening attendance),48,5,1,0.0944,Rendah,Graduate
+330,Veterinary Nursing,18,5,1,0.0942,Rendah,Graduate
+982,Management (evening attendance),41,5,1,0.0931,Rendah,Graduate
+1977,Nursing,19,7,1,0.0929,Rendah,Graduate
+767,Equinculture,20,4,1,0.0915,Rendah,Graduate
+1425,Equinculture,18,5,1,0.091,Rendah,Graduate
+3784,Nursing,19,6,1,0.0885,Rendah,Graduate
+1457,Management,20,4,1,0.0864,Rendah,Graduate
+1738,Nursing,18,7,1,0.0863,Rendah,Graduate
+3509,Management,18,4,1,0.086,Rendah,Graduate
+1187,Nursing,45,10,1,0.086,Rendah,Graduate
+3525,Management (evening attendance),34,5,1,0.0855,Rendah,Graduate
+28,Veterinary Nursing,18,4,1,0.0854,Rendah,Graduate
+4080,Advertising and Marketing Management,18,5,1,0.0852,Rendah,Graduate
+1348,Nursing,19,7,1,0.0849,Rendah,Graduate
+4392,Nursing,32,7,1,0.0835,Rendah,Graduate
+1565,Veterinary Nursing,20,4,1,0.0835,Rendah,Graduate
+2324,Nursing,27,7,1,0.0833,Rendah,Graduate
+1356,Veterinary Nursing,20,5,1,0.083,Rendah,Graduate
+3654,Veterinary Nursing,20,5,1,0.0828,Rendah,Graduate
+376,Social Service (evening attendance),42,10,1,0.0824,Rendah,Graduate
+3532,Agronomy,24,9,1,0.0816,Rendah,Graduate
+4219,Journalism and Communication,18,6,1,0.0812,Rendah,Graduate
+4125,Veterinary Nursing,19,5,1,0.0809,Rendah,Graduate
+779,Basic Education,20,6,1,0.0802,Rendah,Graduate
+22,Oral Hygiene,20,8,1,0.0793,Rendah,Graduate
+2710,Oral Hygiene,25,7,1,0.0772,Rendah,Graduate
+3114,Advertising and Marketing Management,19,5,1,0.0771,Rendah,Graduate
+3042,Nursing,18,7,1,0.0763,Rendah,Graduate
+1322,Basic Education,20,6,1,0.0762,Rendah,Graduate
+2669,Nursing,43,7,1,0.0757,Rendah,Graduate
+1499,Agronomy,28,6,1,0.0754,Rendah,Graduate
+935,Nursing,34,7,1,0.0751,Rendah,Graduate
+30,Nursing,19,6,1,0.0751,Rendah,Graduate
+1174,Management (evening attendance),24,5,1,0.0743,Rendah,Graduate
+480,Social Service,21,5,1,0.0741,Rendah,Graduate
+1337,Nursing,27,6,1,0.0732,Rendah,Graduate
+4238,Nursing,20,6,1,0.072,Rendah,Graduate
+1768,Tourism,26,6,0,0.0719,Rendah,Graduate
+4145,Oral Hygiene,22,8,1,0.0712,Rendah,Graduate
+2901,Management (evening attendance),36,12,1,0.0704,Rendah,Graduate
+773,Nursing,19,7,1,0.0702,Rendah,Graduate
+4066,Social Service (evening attendance),20,5,1,0.07,Rendah,Graduate
+139,Nursing,20,7,1,0.0698,Rendah,Graduate
+3351,Social Service (evening attendance),26,6,1,0.0694,Rendah,Graduate
+2247,Nursing,19,6,1,0.0694,Rendah,Graduate
+2478,Tourism,23,5,1,0.0693,Rendah,Graduate
+823,Veterinary Nursing,20,6,1,0.0688,Rendah,Graduate
+810,Communication Design,20,6,1,0.0681,Rendah,Graduate
+4370,Nursing,18,6,1,0.0677,Rendah,Graduate
+1653,Management (evening attendance),27,5,1,0.067,Rendah,Graduate
+3109,Journalism and Communication,18,6,1,0.0666,Rendah,Graduate
+2876,Management,53,12,1,0.0663,Rendah,Graduate
+2141,Nursing,18,7,1,0.066,Rendah,Graduate
+241,Nursing,19,7,1,0.0654,Rendah,Graduate
+938,Management (evening attendance),31,7,1,0.065,Rendah,Graduate
+2942,Oral Hygiene,28,8,1,0.0647,Rendah,Graduate
+4032,Animation and Multimedia Design,19,10,1,0.0645,Rendah,Graduate
+3887,Tourism,20,5,1,0.0643,Rendah,Graduate
+2537,Equinculture,19,5,1,0.0641,Rendah,Graduate
+2621,Communication Design,29,10,1,0.0636,Rendah,Graduate
+1505,Nursing,27,7,1,0.062,Rendah,Graduate
+3816,Nursing,18,7,1,0.0607,Rendah,Graduate
+3134,Nursing,21,8,1,0.0605,Rendah,Graduate
+614,Management,20,5,1,0.0602,Rendah,Graduate
+4167,Management (evening attendance),21,4,1,0.0585,Rendah,Graduate
+2818,Management,19,4,1,0.0579,Rendah,Graduate
+3027,Journalism and Communication,18,6,1,0.0575,Rendah,Graduate
+2658,Basic Education,20,6,1,0.0575,Rendah,Graduate
+2019,Tourism,21,5,1,0.0572,Rendah,Graduate
+2374,Advertising and Marketing Management,20,6,1,0.057,Rendah,Graduate
+1612,Veterinary Nursing,18,5,1,0.0568,Rendah,Graduate
+216,Oral Hygiene,25,8,1,0.0565,Rendah,Graduate
+1113,Nursing,20,6,1,0.0561,Rendah,Graduate
+817,Communication Design,20,6,1,0.0556,Rendah,Graduate
+583,Advertising and Marketing Management,19,6,1,0.0556,Rendah,Graduate
+997,Nursing,20,6,1,0.0549,Rendah,Graduate
+3592,Nursing,18,7,1,0.0544,Rendah,Graduate
+3892,Advertising and Marketing Management,18,6,1,0.0532,Rendah,Graduate
+4044,Nursing,18,7,1,0.0527,Rendah,Graduate
+3559,Communication Design,19,6,1,0.0526,Rendah,Graduate
+3001,Nursing,24,7,1,0.0519,Rendah,Graduate
+4073,Social Service,31,6,1,0.0517,Rendah,Graduate
+99,Veterinary Nursing,19,5,1,0.0506,Rendah,Graduate
+2829,Communication Design,18,6,1,0.0505,Rendah,Graduate
+450,Tourism,20,5,1,0.0501,Rendah,Graduate
+4054,Communication Design,19,6,1,0.0489,Rendah,Graduate
+2454,Animation and Multimedia Design,21,11,1,0.0489,Rendah,Graduate
+3441,Oral Hygiene,19,7,1,0.0487,Rendah,Graduate
+3295,Nursing,23,6,1,0.0481,Rendah,Graduate
+3451,Management (evening attendance),24,5,1,0.0474,Rendah,Graduate
+2808,Advertising and Marketing Management,18,6,1,0.0474,Rendah,Graduate
+2628,Nursing,19,7,1,0.0473,Rendah,Graduate
+2784,Social Service,20,6,1,0.0471,Rendah,Graduate
+182,Management (evening attendance),26,6,1,0.0463,Rendah,Graduate
+3294,Nursing,18,7,1,0.0462,Rendah,Graduate
+3417,Journalism and Communication,19,6,1,0.0458,Rendah,Graduate
+3099,Social Service,19,6,1,0.0457,Rendah,Graduate
+3061,Journalism and Communication,19,6,1,0.0447,Rendah,Graduate
+2534,Equinculture,18,6,1,0.0444,Rendah,Graduate
+1271,Journalism and Communication,18,6,1,0.0439,Rendah,Graduate
+644,Nursing,18,8,1,0.0427,Rendah,Graduate
+2733,Nursing,20,7,1,0.0424,Rendah,Graduate
+2629,Management,18,4,1,0.0422,Rendah,Graduate
+1215,Nursing,18,7,1,0.0421,Rendah,Graduate
+766,Management,20,5,1,0.0418,Rendah,Graduate
+3155,Nursing,18,6,1,0.0418,Rendah,Graduate
+4101,Oral Hygiene,20,8,1,0.0415,Rendah,Graduate
+849,Veterinary Nursing,18,5,1,0.0413,Rendah,Graduate
+2824,Advertising and Marketing Management,19,5,1,0.0392,Rendah,Graduate
+1651,Nursing,19,7,1,0.0381,Rendah,Graduate
+4088,Nursing,25,7,1,0.038,Rendah,Graduate
+3470,Nursing,19,7,1,0.0375,Rendah,Graduate
+1830,Management,18,5,1,0.0375,Rendah,Graduate
+722,Tourism,23,6,1,0.0371,Rendah,Graduate
+1355,Social Service,20,5,1,0.0361,Rendah,Graduate
+3175,Social Service,19,6,1,0.0355,Rendah,Graduate
+279,Nursing,18,8,1,0.0315,Rendah,Graduate
+2468,Agronomy,20,6,1,0.0313,Rendah,Graduate
+3369,Nursing,19,7,1,0.0313,Rendah,Graduate
+2552,Communication Design,20,6,1,0.031,Rendah,Graduate
+1571,Social Service (evening attendance),45,7,1,0.0304,Rendah,Graduate
+116,Nursing,20,7,1,0.0299,Rendah,Graduate
+1634,Social Service (evening attendance),54,11,1,0.0295,Rendah,Graduate
+2306,Communication Design,22,6,1,0.0272,Rendah,Graduate
+4157,Nursing,18,7,1,0.0271,Rendah,Graduate
+382,Nursing,20,8,1,0.0271,Rendah,Graduate
+1036,Communication Design,18,6,1,0.0256,Rendah,Graduate
+2261,Advertising and Marketing Management,19,6,1,0.0243,Rendah,Graduate
+4285,Oral Hygiene,24,7,1,0.0236,Rendah,Graduate
+258,Communication Design,18,6,1,0.0236,Rendah,Graduate
+287,Communication Design,18,6,1,0.0236,Rendah,Graduate
+4126,Nursing,24,7,1,0.0208,Rendah,Graduate

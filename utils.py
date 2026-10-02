@@ -1,18 +1,18 @@
-"""Shared utilities for the notebook and the Streamlit app.
+"""Utilitas bersama untuk notebook dan aplikasi Streamlit.
 
-Contains:
-- Mappings from numeric codes to labels (based on the UCI dataset documentation
+Berisi:
+- Mapping kode numerik ke label (berdasarkan dokumentasi dataset UCI
   "Predict Students' Dropout and Academic Success").
-- The list of features used by the model.
-- The feature-engineering function, which also runs inside the model pipeline,
-  so the app only needs to send raw features.
+- Daftar fitur yang dipakai model.
+- Fungsi feature engineering yang juga dipakai di dalam pipeline model,
+  sehingga aplikasi cukup mengirim fitur mentah.
 """
 
 import numpy as np
 import pandas as pd
 
 # ---------------------------------------------------------------------------
-# Label mappings
+# Mapping label
 # ---------------------------------------------------------------------------
 MARITAL_STATUS = {
     1: "Single", 2: "Married", 3: "Widower", 4: "Divorced",
@@ -93,8 +93,8 @@ YES_NO = {1: "Yes", 0: "No"}
 GENDER = {1: "Male", 0: "Female"}
 ATTENDANCE = {1: "Daytime", 0: "Evening"}
 
-# Parents' education has many codes (>30), so they are grouped into
-# broader levels to keep the analysis readable.
+# Kode pendidikan orang tua sangat banyak (>30), sehingga dikelompokkan
+# ke jenjang yang lebih umum agar mudah dianalisis.
 _PARENT_EDU_GROUPS = {
     "Higher education": [2, 3, 4, 5, 6, 40, 41, 43, 44],
     "Secondary education": [1, 9, 10, 12, 13, 14, 18, 20, 22, 25, 27, 31, 33, 39, 42],
@@ -104,9 +104,9 @@ _PARENT_EDU_GROUPS = {
 }
 PARENT_EDUCATION = {code: grp for grp, codes in _PARENT_EDU_GROUPS.items() for code in codes}
 
-# Parents' occupation codes follow the Portuguese occupation classification
-# (derived from ISCO). Codes 0-10 are major groups; 3-digit codes are sub-groups
-# whose first digit after the leading 1 identifies the major group.
+# Kode pekerjaan orang tua mengikuti klasifikasi profesi Portugal (turunan
+# ISCO). Kode 0-10 adalah grup utama; kode 3 digit adalah sub-grup yang digit
+# pertamanya (setelah angka 1) menunjukkan grup utamanya.
 OCCUPATION_GROUPS = {
     0: "Student",
     1: "Directors & executive managers",
@@ -125,7 +125,7 @@ OCCUPATION_GROUPS = {
 
 
 def occupation_group(code: int) -> str:
-    """Map an occupation code (including 3-digit sub-groups) to its major group."""
+    """Petakan kode pekerjaan (termasuk sub-grup 3 digit) ke grup utamanya."""
     code = int(code)
     if code in OCCUPATION_GROUPS:
         return OCCUPATION_GROUPS[code]
@@ -137,7 +137,7 @@ def occupation_group(code: int) -> str:
 
 
 def add_labels(df: pd.DataFrame) -> pd.DataFrame:
-    """Add label columns (suffix `_label`) for the categorical columns."""
+    """Tambahkan kolom label (suffix `_label`) untuk kolom-kolom kategorikal."""
     out = df.copy()
     out["Marital_status_label"] = out["Marital_status"].map(MARITAL_STATUS)
     out["Application_mode_label"] = out["Application_mode"].map(APPLICATION_MODE)
@@ -157,7 +157,7 @@ def add_labels(df: pd.DataFrame) -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
-# Model features
+# Fitur model
 # ---------------------------------------------------------------------------
 CATEGORICAL_FEATURES = ["Marital_status", "Application_mode", "Course"]
 
@@ -187,10 +187,10 @@ ENGINEERED_FEATURES = ["Approval_rate_1st_sem", "Approval_rate_2nd_sem"]
 
 
 def add_engineered_features(df: pd.DataFrame) -> pd.DataFrame:
-    """Compute the ratio of courses passed / courses enrolled for each semester.
+    """Hitung rasio mata kuliah lulus / mata kuliah diambil per semester.
 
-    If a student enrolled in no courses (enrolled = 0), the ratio is 0.
-    Used inside the model pipeline (via FunctionTransformer).
+    Jika mahasiswa tidak mengambil mata kuliah (enrolled = 0), rasio diisi 0.
+    Dipakai di dalam pipeline model (via FunctionTransformer).
     """
     out = df.copy()
     for sem in ["1st", "2nd"]:

@@ -4,3 +4,6 @@ __pycache__/
 .venv/
 metabase-data/
 .DS_Store
+
+# Video submission (dikirim lewat ZIP, tidak di-push)
+rainy1501-video.mp4

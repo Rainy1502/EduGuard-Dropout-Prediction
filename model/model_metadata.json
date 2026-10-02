@@ -5,7 +5,7 @@
     "max_depth": 3,
     "n_estimators": 100
   },
-  "target": "Dropout (1) vs Graduate (0); Enrolled students are not used for training",
+  "target": "Dropout (1) vs Graduate (0); Enrolled tidak dilibatkan dalam training",
   "n_model_rows": 3630,
   "n_train": 2904,
   "n_test": 726,
