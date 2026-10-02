@@ -18,7 +18,7 @@
 
 > An early warning system that finds students at risk of **dropping out** before it is too late.
 >
-> The project covers an analysis of 4,424 Jaya Jaya Institut students, a machine learning model that predicts dropout risk (recall 81%, ROC-AUC 0.93), the **EduGuard** Streamlit prototype, and a **Metabase** business dashboard for monitoring the factors behind dropout.
+> The project covers an analysis of 4,424 Jaya Jaya Institut students, a machine learning model that predicts dropout risk (recall 92%, ROC-AUC 0.97), the **EduGuard** Streamlit prototype, and a **Metabase** business dashboard for monitoring the factors behind dropout.
 
 ---
 
@@ -28,9 +28,9 @@
 |---|---|
 | **Institution (fictional)** | Jaya Jaya Institut |
 | **Dataset** | Students' Performance: 4,424 students, 36 features, target `Status` (Dropout / Enrolled / Graduate) |
-| **Model target** | Dropout vs Non-Dropout (Graduate + Enrolled) |
-| **Model** | Logistic Regression, 20 features + 2 engineered features, threshold 0.51 |
-| **Performance (test set)** | Recall 81.3% · Precision 80.5% · F1 0.809 · Accuracy 87.7% · ROC-AUC 0.929 |
+| **Model target** | Dropout (1) vs Graduate (0), trained on 3,630 students; 794 Enrolled students kept aside for prediction |
+| **Model** | Gradient Boosting, 20 features + 2 engineered features, threshold 0.49 |
+| **Performance (test set)** | Recall 91.5% · Precision 89.7% · F1 0.906 · Accuracy 92.6% · ROC-AUC 0.971 |
 | **Prototype** | Streamlit (EduGuard), deployed to Streamlit Community Cloud |
 | **Dashboard** | Metabase (SQLite as the data source) |
 
@@ -54,8 +54,8 @@ Jaya Jaya Institut wants to **detect students who are likely to drop out as earl
 | Stage | Output |
 |---|---|
 | **Data understanding & EDA** | Main drivers of dropout (`notebook.ipynb`) |
-| **Data preparation** | Selection of 20 features, course pass-rate features, preprocessing pipeline |
-| **Modeling & evaluation** | Comparison of 4 algorithms, tuning, threshold selection, evaluation on the test set |
+| **Data preparation** | Dropout + Graduate as modeling data (Enrolled set aside), selection of 20 features, course pass-rate features, preprocessing pipeline |
+| **Modeling & evaluation** | Comparison of 4 algorithms, tuning, threshold selection, evaluation on the test set, prediction of Enrolled students |
 | **Deployment** | **EduGuard** Streamlit prototype on Streamlit Community Cloud |
 | **Business dashboard** | 4-tab Metabase dashboard with study program & gender filters |
 | **Recommendations** | Conclusions and action items for the institution |
@@ -85,7 +85,7 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook notebook.ipynb
 ```
-> 💡 The notebook regenerates the model (`model/`), the dashboard data (`data/students_clean.csv`, `data/students.db`), and the sample batch input (`data/sample_batch_input.csv`). All of these files are already included, so this step is optional.
+> 💡 The notebook regenerates the model (`model/`), the dashboard data (`data/students_clean.csv`, `data/students.db`), the Enrolled predictions (`data/enrolled_predictions.csv`), and the sample batch input (`data/sample_batch_input.csv`). All of these files are already included, so this step is optional.
 
 ---
 
@@ -106,7 +106,8 @@ submission/
 │   ├── data.csv                        # Original dataset
 │   ├── students_clean.csv              # Labelled data (notebook output)
 │   ├── students.db                     # SQLite database, the Metabase data source
-│   └── sample_batch_input.csv          # Template / sample input for batch prediction
+│   ├── enrolled_predictions.csv        # Predicted dropout risk of the 794 Enrolled students
+│   └── sample_batch_input.csv          # Template / sample input for batch prediction (25 Enrolled students)
 │
 ├── 📁 model/
 │   ├── dropout_model.joblib            # Pipeline: feature engineering + preprocessing + model
@@ -131,7 +132,7 @@ submission/
           ┌────────────────┴─────────────────┐
           ▼                                  ▼
 [ model/dropout_model.joblib ]     [ data/students.db ]
-  Logistic Regression pipeline      labelled data (SQLite)
+  Gradient Boosting pipeline        labelled data (SQLite)
           │                                  │
           ▼                                  ▼
   [ EduGuard · Streamlit ]           [ Metabase Dashboard ]
@@ -206,20 +207,22 @@ streamlit run app.py
 | Feature | Details |
 |---|---|
 | **Dashboard** | Dropout monitoring per segment, filterable by study program, gender, and class time |
-| **Single Prediction** | Dropout probability and risk level (**Low** < 25%, **Medium** 25–51%, **High** ≥ 51%), the factors that drive the prediction, and recommendations for academic advisors |
-| **Batch Prediction** | Upload a CSV of many students (template in `data/sample_batch_input.csv`), filter by risk level, download the results |
+| **Single Prediction** | Dropout probability and risk level (**Low** < 25%, **Medium** 25–49%, **High** ≥ 49%), the factors that drive the prediction, and recommendations for academic advisors |
+| **Batch Prediction** | Upload a CSV of many students (template with 25 Enrolled students in `data/sample_batch_input.csv`), filter by risk level, download the results |
 | **About the Model** | Model performance, prediction flow, and the influence of each feature |
 
 ### Model
 
 | Aspect | Description |
 |---|---|
-| **Algorithm** | Logistic Regression (C = 10), chosen over Decision Tree, Random Forest, and Gradient Boosting |
-| **Target** | Dropout (1) vs Non-Dropout (0). *Enrolled* (graduating late) is merged into Non-Dropout because these students have not dropped out, so all 4,424 rows are kept |
+| **Algorithm** | Gradient Boosting (100 trees, depth 3, learning rate 0.1), highest F1-score compared with Logistic Regression, Decision Tree, and Random Forest |
+| **Training data** | Only students whose final outcome is known: 3,630 **Dropout** (1,421) and **Graduate** (2,209) students, split 80/20 (stratified) |
+| **Target** | Dropout (1) vs Graduate (0) |
+| **Enrolled students** | The 794 *Enrolled* students are still studying, so their outcome is unknown. They are **not used for training or evaluation** and are predicted as future data: 405 High, 131 Medium, 258 Low risk |
 | **Features** | 20 features (semester 1–2 academics, finances, profile, admission) + 2 engineered features (course pass rate per semester) |
-| **Threshold** | 0.51, chosen so that recall is at least 80% |
-| **Performance (test set)** | Recall 81.3% · Precision 80.5% · F1 0.809 · Accuracy 87.7% · ROC-AUC 0.929 |
-| **Risk-level validation** | Actual dropout rate on the test set: Low 4.9% · Medium 21.4% · High 80.5% |
+| **Threshold** | 0.49, the highest-F1 threshold with recall of at least 80% |
+| **Performance (test set)** | Recall 91.5% · Precision 89.7% · F1 0.906 · Accuracy 92.6% · ROC-AUC 0.971 |
+| **Risk-level validation** | Actual dropout rate on the test set: Low 3.6% · Medium 22.2% · High 89.7% |
 
 ---
 
@@ -237,7 +240,7 @@ streamlit run app.py
    | **Program & admission path** | Highest: Equinculture (55%), Informatics Engineering (54%), Management (evening) (51%). Lowest: Nursing (15%). The *Over 23 years old* (55%) and *Holders of other higher courses* (61%) paths carry the most risk. |
    | **No meaningful effect** | Parents' education and macroeconomic conditions (unemployment, inflation, GDP) |
 
-3. **Early detection can be automated.** The model catches **81% of students who will drop out** with 80% precision. Its risk levels are meaningful: the actual dropout rate is 4.9% (Low), 21.4% (Medium), and 80.5% (High).
+3. **Early detection can be automated.** Trained on Dropout and Graduate students, the model catches **91.5% of students who will drop out** with 89.7% precision. Its risk levels are meaningful: the actual dropout rate is 3.6% (Low), 22.2% (Medium), and 89.7% (High). Applied to the 794 Enrolled students, it flags **405 (51%) as High risk**.
 
 4. **Ongoing monitoring** is possible through the Metabase dashboard and the Dashboard tab in EduGuard, by study program, gender, and class time.
 
@@ -245,13 +248,14 @@ streamlit run app.py
 
 | # | Action | Details |
 |---|---|---|
-| 1 | **Early warning at the end of every semester** | Run EduGuard batch prediction for all active students at the end of semesters 1 and 2. *High*-risk students meet their academic advisor within 2 weeks; *Medium*-risk students are checked monthly. |
-| 2 | **Academic intervention from semester 1** | Intensive mentoring, remedial classes, and peer tutoring for students with a course pass rate below 50% or no courses passed. |
-| 3 | **Address financial problems early** | Link tuition arrears data to the academic system; offer instalment plans or tuition relief and financial counselling to students who are behind on tuition or in debt. |
-| 4 | **Expand scholarships** | Prioritise high-risk students with financial constraints, since scholarship holders drop out far less often. |
-| 5 | **Support mature & evening students** | Flexible schedules, online/hybrid class options, and time-management counselling for students aged ≥ 25, the *Over 23 years old* path, and evening classes. |
-| 6 | **Mentoring for high-risk programs** | Dedicated mentoring and a first-year curriculum review for Equinculture, Informatics Engineering, and Management (evening). |
-| 7 | **Regular monitoring & evaluation** | Review the dashboard every semester to measure the impact of interventions, and retrain the model yearly with the latest data. |
+| 1 | **Follow up on the 405 High-risk Enrolled students now** | Use `data/enrolled_predictions.csv` (sorted by probability) to schedule advisor meetings, starting with students who passed no courses in semester 2 or are behind on tuition. |
+| 2 | **Early warning at the end of every semester** | Run EduGuard batch prediction for all active students at the end of semesters 1 and 2. *High*-risk students meet their academic advisor within 2 weeks; *Medium*-risk students are checked monthly. |
+| 3 | **Academic intervention from semester 1** | Intensive mentoring, remedial classes, and peer tutoring for students with a course pass rate below 50% or no courses passed. |
+| 4 | **Address financial problems early** | Link tuition arrears data to the academic system; offer instalment plans or tuition relief and financial counselling to students who are behind on tuition or in debt. |
+| 5 | **Expand scholarships** | Prioritise high-risk students with financial constraints, since scholarship holders drop out far less often. |
+| 6 | **Support mature & evening students** | Flexible schedules, online/hybrid class options, and time-management counselling for students aged ≥ 25, the *Over 23 years old* path, and evening classes. |
+| 7 | **Mentoring for high-risk programs** | Dedicated mentoring and a first-year curriculum review for Equinculture, Informatics Engineering, and Management (evening). |
+| 8 | **Regular monitoring & evaluation** | Review the dashboard every semester to measure the impact of interventions, and retrain the model yearly with the latest data. |
 
 ---
 

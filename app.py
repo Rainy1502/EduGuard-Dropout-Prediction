@@ -346,16 +346,12 @@ def predict(df: pd.DataFrame) -> np.ndarray:
     return model.predict_proba(df[MODEL_FEATURES])[:, 1]
 
 
-def transform(df: pd.DataFrame) -> np.ndarray:
-    """Run the pipeline's feature engineering + preprocessing steps (without the model)."""
-    out = model.named_steps["preprocess"].transform(model.named_steps["features"].transform(df[MODEL_FEATURES]))
-    return out.toarray() if hasattr(out, "toarray") else out
-
-
 @st.cache_resource
-def reference_mean() -> np.ndarray:
-    """Mean of the transformed features over the full dataset, used as the 'average student' baseline."""
-    return transform(pd.read_csv(DATA_PATH, sep=";")).mean(axis=0)
+def reference_sample(n: int = 200) -> pd.DataFrame:
+    """Sample of students from the modeling data (Dropout + Graduate), used as the comparison group."""
+    data = pd.read_csv(DATA_PATH, sep=";")
+    data = data[data["Status"].isin(["Dropout", "Graduate"])]
+    return data[MODEL_FEATURES].sample(n, random_state=42).reset_index(drop=True)
 
 
 def format_value(feature: str, value) -> str:
@@ -374,25 +370,23 @@ def format_value(feature: str, value) -> str:
 
 
 def explain(row: pd.DataFrame) -> pd.Series:
-    """Contribution of each feature to the dropout log-odds, relative to the average student.
+    """Contribution of each feature through a what-if analysis (works for any model type).
 
-    contribution = coefficient x (value - mean). Positive values raise the risk,
-    negative values lower it. One-hot columns are summed back into their original feature.
+    contribution = this student's probability - mean probability when one feature is swapped for
+    other students' values (a sample of the modeling data) while every other feature stays the same.
+    Positive values raise the risk, negative values lower it.
     """
-    features = model.named_steps["features"].transform(row[MODEL_FEATURES])
-    preprocess = model.named_steps["preprocess"]
-    contrib = (transform(row)[0] - reference_mean()) * model.named_steps["model"].coef_[0]
-
-    grouped = {}
-    for name, value in zip(preprocess.get_feature_names_out(), contrib):
-        kind, raw = name.split("__", 1)
-        if kind == "cat":
-            raw = next(c for c in CATEGORICAL_FEATURES if raw.startswith(c + "_"))
-        grouped[raw] = grouped.get(raw, 0.0) + value
-
-    values = features.iloc[0]
-    labels = {f: f"{FEATURE_NAMES[f]}: {format_value(f, values[f])}" for f in grouped}
-    return pd.Series(grouped).rename(index=labels)
+    values = row[MODEL_FEATURES].iloc[0].to_dict()
+    ref = reference_sample()
+    variants = []
+    for f in MODEL_FEATURES:
+        v = pd.DataFrame([values] * len(ref))
+        v[f] = ref[f].values
+        variants.append(v)
+    probs = predict(pd.concat(variants, ignore_index=True)).reshape(len(MODEL_FEATURES), len(ref))
+    contrib = predict(row)[0] - probs.mean(axis=1)
+    labels = [f"{FEATURE_NAMES[f]}: {format_value(f, values[f])}" for f in MODEL_FEATURES]
+    return pd.Series(contrib, index=labels)
 
 
 def recommendations(row: dict, prob: float) -> list[str]:
@@ -441,7 +435,7 @@ def contribution_chart(contrib: pd.Series, n: int = 8) -> go.Figure:
                            marker_color=colors, width=0.6, customdata=np.stack([top.index, direction], axis=1),
                            hovertemplate="%{customdata[0]}<br>%{customdata[1]}<extra></extra>"))
     fig.add_vline(x=0, line_color=MUTED, line_width=1)
-    # Raw log-odds mean nothing to users; only the direction and relative bar length matter.
+    # The raw numbers mean nothing to users; only the direction and relative bar length matter.
     fig.update_xaxes(showticklabels=False, showgrid=False,
                      title_text="lowers risk  \u2190   \u2192  raises risk", title_font_size=12)
     fig.update_yaxes(showgrid=False, tickfont=dict(color=INK_SOFT))
@@ -713,11 +707,10 @@ with tab_single:
                 </div>""")
                 show(gauge(prob, level))
             with r2:
-                chart_title("Factors that most affect the prediction", "Compared with the average student")
+                chart_title("Factors that most affect the prediction", "Compared with other students")
                 show(contribution_chart(explain(row_df)))
-                st.caption("Measured after accounting for the other factors, so it can differ from the Dashboard. "
-                           "Example: married students drop out more often because they tend to be older, "
-                           "not because they are married.")
+                st.caption("Bar length = how much the dropout probability changes when this feature is swapped "
+                           "for other students' values while every other feature stays the same.")
 
             section("Follow-up", "Recommendations for the academic advisor")
             html("".join(f'<div class="eg-rec"><span class="eg-rec-num">{i:02d}</span><span>{rec}</span></div>'
@@ -743,7 +736,7 @@ with tab_batch:
                          hide_index=True)
 
     if uploaded is None:
-        use_sample = st.toggle("Use sample data (25 students)", value=True)
+        use_sample = st.toggle("Use sample data (25 Enrolled students)", value=True)
         batch_df = sample_df.copy() if use_sample else None
     else:
         batch_df = read_uploaded_csv(uploaded)
@@ -756,7 +749,7 @@ with tab_batch:
             result = batch_df.copy()
             result["Dropout_probability"] = predict(result)
             result["Risk_level"] = result["Dropout_probability"].map(risk_level)
-            result["Prediction"] = np.where(result["Dropout_probability"] >= THRESHOLD, "Dropout", "Non-Dropout")
+            result["Prediction"] = np.where(result["Dropout_probability"] >= THRESHOLD, "Dropout", "Graduate")
             result = result.sort_values("Dropout_probability", ascending=False)
 
             counts = result["Risk_level"].value_counts()
@@ -819,10 +812,13 @@ with tab_about:
     with t1:
         chart_title("How EduGuard makes a prediction")
         steps = [
-            ("Data", f"{len(MODEL_FEATURES)} academic, financial, and profile features per student."),
+            ("Data", f"{fmt_int(meta['n_model_rows'])} students who already dropped out or graduated, "
+                     f"{len(MODEL_FEATURES)} academic, financial, and profile features. "
+                     f"Enrolled students are not used for training."),
             ("Processing", "Compute course pass rates, standardise scales, encode categories as numbers."),
-            ("Model", f"{meta['model_name']}, trained on 4,424 students."),
-            ("Decision", f"≥ {fmt_pct(THRESHOLD, 0)} = high risk (catches 8 of 10 dropouts), "
+            ("Model", f"{meta['model_name']}, trained on {fmt_int(meta['n_train'])} students (80%)."),
+            ("Decision", f"≥ {fmt_pct(THRESHOLD, 0)} = high risk (catches "
+                         f"{round(m['recall'] * 10)} of 10 dropouts), "
                          f"{fmt_pct(RISK_LOW_MAX, 0)}-{fmt_pct(THRESHOLD, 0)} = medium."),
         ]
         html("".join(f'<div class="eg-rec"><span class="eg-rec-num">{i:02d}</span>'
